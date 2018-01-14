@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\res\\merged\\debug\\menu\\capture.xml",
+        "source": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\menu\\capture.xml"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\res\\merged\\debug\\menu\\encode.xml",
+        "source": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\menu\\encode.xml"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\res\\merged\\debug\\menu\\history.xml",
+        "source": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\menu\\history.xml"
+    }
+]

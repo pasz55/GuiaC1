@@ -1,0 +1,61 @@
+<ion-view>
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+    <ion-nav-buttons side="right">
+        <button class="button button-custom button-icon icon" ng-click="goTo('cart')">
+            <i class="icon ion-ios-cart"><span class="badge cart-badge">{{ cart_qty }}</span></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="secondary">
+        <button class="button button-custom button-icon icon" ng-click="goTo('home')">
+            <i class="icon ion-ios-home"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content sb-background-image>
+        <div class="list">
+            <div sb-products products="products" value-id="value_id"></div>
+            <div class="item item-custom item-text-wrap" ng-show="products != null && !products.length">
+                {{ "No products for now." | translate }}
+            </div>
+            <div class="item item-custom" ng-if="products == null">
+                {{ "Loading" | translate }}
+            </div>
+            <ion-infinite-scroll ng-if="hasMoreProducts()" on-infinite="loadMoreProducts()" distance="10%" spinner="none" icon="none"></ion-infinite-scroll>
+        </div>
+    </ion-content>
+    
+<style>
+    .product-name{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 5px;
+    }
+    .product-price{
+        padding:5px;
+    }
+    .card{
+        margin:0;
+        position:relative;
+    }
+    .sale-badge{
+        font-size: 50px;
+        position: absolute;
+        right: 15px;
+        top:-15px;
+        color: #FFC107;
+    }
+    .out-of-stock{
+        font-size: 20px;
+        width:100%;
+        position: absolute;
+        top:15px;
+        color: #FFFFFF;
+        background-color:#FF0000;
+    }
+    .cart-badge{
+        background-color: #F44336;
+        color:#ffffff;
+    }
+</style>
+
+</ion-view>

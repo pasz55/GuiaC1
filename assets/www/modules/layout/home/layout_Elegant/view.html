@@ -1,0 +1,36 @@
+<ion-content overflow-scroll=”true”>
+	<div class="layout layout_elegant animated {{ features.layoutOptions.textAnimation }}">
+			<p class="elegantwelcome">
+				{{ features.layoutOptions.welcomeText }}
+			</p>
+			<div class="elegantbutton" tabbar-items ng-repeat="feature in features.overview.options" option="feature" go-to-url="goTo(feature);">
+				<div>
+					<img class="eleganticon" ng-src="{{ feature.icon_url }}" />
+				</div>
+				<div class="eleganttitle">
+					<p>
+						{{ feature.name }}
+					</p>
+				</div>
+			</div>
+	</div>
+</ion-content>
+
+<style>
+.elegantwelcome {
+  color: {{ features.layoutOptions.welcomeTextColor }} !important;
+}
+
+.layout.layout_elegant .eleganttitle p{
+  color: {{ features.layoutOptions.titleTextColor }} !important;
+}
+
+.layout.layout_elegant .elegantbutton {
+	background-color: {{ features.layoutOptions.buttonbgColor }} !important;
+}
+
+.layout.layout_elegant .elegantbutton {
+	border: 2px solid {{ features.layoutOptions.buttonborderColor }} !important;
+}
+
+</style>

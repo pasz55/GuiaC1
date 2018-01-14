@@ -1,0 +1,248 @@
+<ion-view>
+  <ion-nav-title>{{ page_title }}</ion-nav-title>
+  <ion-content id="quizScreen" sb-background-image delegate-handle="quizScreen">
+
+    <form name="form" ng-submit="post()">
+
+      <div ng-if="!is_loading && sections.length">
+        <div ng-repeat="section in sections" ng-show="isCurrentSection(section.id)">
+          <div id="quizList" class="list" delegate-handle="quizList">
+            <div class="item text-center item-custom item-text-wrap" ng-if="!is_loading && sections.length && isPreview">
+              {{ "This is a preview of your quiz, it shows current sections and questions set in the editor." | translate }}
+            </div>
+
+            <div class="item item-divider item-divider-custom item-text-wrap">
+              <h2>{{ section.label }}</h2>
+            </div>
+
+            <div ng-repeat="field in section.fields" ng-show="isCurrentPage(field.id)">
+              <div ng-switch on="field.type" ng-class="{answers_mode: answersMode}">
+                <div ng-switch-when="checkbox">
+                  <div class="item item-divider item-divider-custom">
+                    <img ng-src="{{field.image}}" ng-if="field.image" class="quiz_img" />
+                    <p class="label">{{ field.label }}</p>
+                  </div>
+                  <ion-checkbox
+                      ng-disabled="answersMode || isCurrentPageScored()"
+                      name="{{field.id}}[]"
+                      ng-change="computeNextPage()"
+                      class="checkbox-custom item-text-wrap"
+                      ng-repeat="option in field.options"
+                      ng-model-options="{ allowInvalid: true }"
+                      ng-model="formData[field.id][option.id]"
+                      ng-class="{ correct: (answersMode && option.correct == 1), incorrect: (answersMode && (option.correct == 0 && !formData[field.id][option.id])), invalid: (answersMode && (option.correct == 0 && formData[field.id][option.id])) }">
+                    <div class="item-pic">
+                      <div class="invalid-cross">
+                        <i class='icon ion-close-round'></i>
+                      </div>
+                      <img ng-src="{{option.image}}" ng-if="option.image" class="quiz_img" />
+                    </div>
+                    {{ option.text }}
+                  </ion-checkbox>
+                </div>
+
+                <div ng-switch-when="radio">
+                  <div class="item item-divider item-divider-custom item-text-wrap">
+                    <img ng-src="{{field.image}}" ng-if="field.image" class="quiz_img" />
+                    <p class="label">{{ field.label }}</p>
+                  </div>
+                  <ion-radio
+                      ng-disabled="answersMode || isCurrentPageScored()"
+                      name="{{field.id}}"
+                      ng-change="computeNextPage()"
+                      class="radio-custom item-text-wrap"
+                      ng-repeat="option in field.options"
+                      ng-model-options="{ allowInvalid: true }"
+                      ng-model="formData[field.id]"
+                      ng-value="option.id"
+                      ng-class="{ correct: (answersMode && option.correct == 1), incorrect: (answersMode && (option.correct == 0 && formData[field.id] !== option.id)), invalid: (answersMode && (option.correct == 0 && formData[field.id] === option.id)) }">
+                    <img ng-src="{{option.image}}" ng-if="option.image" class="quiz_img" />
+                    {{ option.text }}
+                  </ion-radio>
+                </div>
+
+                <div ng-switch-default="">
+                  <div class="item item-custom item-text-wrap">
+                    <div class="item-pic">
+                      <div class="invalid-cross">
+                        <i class='icon ion-close-round'></i>
+                      </div>
+                      <img ng-src="{{field.image}}" ng-if="field.image" class="quiz_img" />
+                    </div>
+                    <p>{{ field.label }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="list">
+        <div ng-show="isCurrentPage('view_end')">
+          <div class="list">
+            <div ng-if="(settings.results_screen.score || settings.results_screen.percentage) && (currentScore || maxScore)" class="item item-custom">
+              <h2>{{"Your score:" | translate }}</h2>
+              <h3 ng-if="settings.results_screen.score && settings.results_screen.percentage">{{currentScore}} {{ "points" | translate }} ( {{((currentScore*100/maxScore) || 0) | number:0 }}% )</h3>
+              <h3 ng-if="settings.results_screen.score && !settings.results_screen.percentage">{{currentScore}} {{ "points" | translate }}</h3>
+              <h3 ng-if="settings.results_screen.percentage && !settings.results_screen.score">{{((currentScore*100/maxScore) || 0) | number:0 }}%</h3>
+            </div>
+            <div ng-if="settings.results_screen.grade && grade && (currentScore || maxScore)" class="item item-custom item-text-wrap">
+              <h3>{{grade.name}}</h3>
+              <h4><em>{{ "From" | translate }} {{grade.score_range_min | number:0 }} {{ "to" | translate }} {{ grade.score_range_max | number:0 }} {{ (grade.score_range_unit == "percent" ? "percent correct" : "points") | translate }}</em></h4>
+              <div ng-bind-html="grade.summary | trusted_html">
+              </div>
+            </div>
+            <div ng-bind-html="settings.thank_you | trusted_html" class="item item-custom item-text-wrap">
+            </div>
+            <div ng-if="settings.results_screen.answers && has_answers" class="item item-custom item-text-wrap">
+              <h2>{{ "Answers:" | translate }}</h2>
+              <div id="answersList" ng-repeat="section in sections">
+                <div class="item item-divider item-divider-custom item-text-wrap">
+                  <h2>{{ section.label }}</h2>
+                </div>
+                <div ng-repeat="field in section.fields">
+                  <div ng-switch on="field.type" class="answers_mode">
+                    <div ng-switch-when="checkbox">
+                      <div class="item item-divider item-divider-custom">
+                        <img ng-src="{{field.image}}" ng-if="field.image" class="quiz_img" />
+                        <p class="label">{{ field.label }}</p>
+                      </div>
+                      <ion-checkbox
+                          name="{{field.id}}[]"
+                          class="checkbox-custom item-text-wrap"
+                          ng-repeat="option in field.options"
+                          ng-disabled="true"
+                          ng-model="formData[field.id][option.id]"
+                          ng-class="{ correct: (answersMode && option.correct == 1), incorrect: (answersMode && (option.correct == 0 && !formData[field.id][option.id])), invalid: (answersMode && (option.correct == 0 && formData[field.id][option.id])) }"
+                          ng-checked="formData[field.id][option.id]">
+                        <div class="item-pic">
+                          <div class="invalid-cross">
+                            <i class='icon ion-close-round'></i>
+                          </div>
+                          <img ng-src="{{option.image}}" ng-if="option.image" class="quiz_img" />
+                        </div>
+                        {{ option.text }}
+                      </ion-checkbox>
+                    </div>
+
+                    <div ng-switch-when="radio">
+                      <div class="item item-divider item-divider-custom item-text-wrap">
+                        <img ng-src="{{field.image}}" ng-if="field.image" class="quiz_img" />
+                        <p class="label">{{ field.label }}</p>
+                      </div>
+                      <ion-radio
+                          name="{{field.id}}"
+                          class="radio-custom item-text-wrap"
+                          ng-repeat="option in field.options"
+                          ng-disabled="true"
+                          ng-model="formData[field.id]"
+                          ng-value="option.id"
+                          ng-class="{ correct: (answersMode && option.correct == 1), incorrect: (answersMode && (option.correct == 0 && formData[field.id] !== option.id)), invalid: (answersMode && (option.correct == 0 && formData[field.id] === option.id)) }"
+                          ng-checked="formData[field.id] === option.id">
+                        <div class="item-pic">
+                          <div class="invalid-cross">
+                            <i class='icon ion-close-round'></i>
+                          </div>
+                          <img ng-src="{{option.image}}" ng-if="option.image" class="quiz_img" />
+                        </div>
+                        {{ option.text }}
+                      </ion-radio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="list" ng-if="!is_loading">
+        <div class="item item-custom">
+          <div class="row" ng-show="isCurrentPage('view_end')">
+            <div class="col">
+              <span class="button button-custom button-block" ng-click="goHome()">
+                {{"Home" | translate}}
+              </span>
+            </div>
+          </div>
+          <div class="row" ng-hide="isCurrentPage('view_end')" ng-if="sections.length">
+            <div class="col text-left">
+              <div ng-if="current_timer > 0 && !isCurrentPageScored()">
+                <h2>{{ "Time" | translate }}:</h2>
+                {{current_timer}}
+              </div>
+            </div>
+            <div class="col"><!-- SPACER --></div>
+            <div class="col text-right">
+              <span class="button button-custom button-block" ng-click="goNext()">{{isNextPage('view_end') ? "Finish" : "Next" | translate}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="list">
+        <div class="item text-center item-custom" ng-if="!is_loading && !sections.length && !isCurrentPage('view_end')">
+          {{ "No quiz at the moment!" | translate }}
+        </div>
+      </div>
+
+    </form>
+
+  </ion-content>
+<style>
+ #answersList {
+     margin-top: 20px;
+     border: 2px solid #CCC;
+ }
+
+ .item-pic {
+     max-width: 320px;
+ }
+
+ .correct {
+     font-weight: bold;
+ }
+
+ .incorrect *, .invalid * {
+     text-decoration: line-through !important;
+ }
+
+ .incorrect {
+     opacity: 0.25;
+ }
+
+ .invalid {
+     opacity: 0.4;
+ }
+
+ .invalid .item-pic {
+     position: relative;
+ }
+
+ .invalid-cross {
+     display: none;
+ }
+
+ .invalid .item-pic .invalid-cross {
+     display: block;
+     position: absolute;
+     left: 10px;
+     top: 50%;
+     right: 0;
+     text-align: center;
+     max-width: 320px;
+     font-size: 120px;
+     margin-top: -60px;
+     line-height: 120px;
+     color: white;
+     overflow: hidden;
+     text-shadow: 2px 2px 5px #000000;
+ }
+
+ .quiz_img {
+     display: block;
+     margin: 5px;
+     max-width: 100%;
+ }
+</style>
+</ion-view>

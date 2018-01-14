@@ -1,0 +1,26 @@
+.scratch-card-view .container {
+    border: 3px solid red;
+    position: relative;
+    margin: 0 auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.scratch-card-view .canvas {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.scratch-card-view .container img{
+    width: 100%;
+}
+.scratch-card-view .congratz {
+    text-align: center;
+}
+.scratch-card-view .congratz span {
+    font-weight: bold;
+    font-size: 20px;
+}

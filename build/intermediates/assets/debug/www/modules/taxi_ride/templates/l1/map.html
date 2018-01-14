@@ -1,0 +1,238 @@
+<ion-view hide-nav-bar="false">
+    <ion-nav-title>{{ page_title | translate }}</ion-nav-title> 
+    <ion-content sb-background-image scroll="false">
+        <div class="loader" ng-show="is_loading">
+            <ion-spinner class="spinner spinner-custom"></ion-spinner>
+        </div>
+        <div id="mapContainer" ng-show="!is_loading">
+            <div id="map">
+            </div>
+            <div id="greyOverlay" ng-hide="is_loading" ng-if="all_valid && driver && (!accepted || !isDriverOnline)">
+                <div id="driver_not_accepted" class="homepage-custom" ng-if="driver && !accepted">
+                    <div class="cell">
+                        <p ng-if="accepted_waiting">{{"You haven't been accepted as a driver by your app administrator yet, please check back later." | translate }}</p>
+                        <p ng-if="!accepted_waiting">{{ "You haven't been accepted as a driver by your app administrator." | translate }}</p>
+                    </div>
+                </div>
+            </div>
+            <div id="mapOverlay" class="homepage-custom" ng-hide="is_loading">
+                <div id="floating_addresses" class="list" ng-if="passenger && !has_request">
+                    <label class="item item-input item-custom">
+                        <div class="input-label">
+                            {{ "Pick up" | translate }}
+                        </div>
+                        <input type="text" ng-model="ride.pickup_address" ng-keyup="setPickUp($event)" sb-google-autocomplete on-address-change="setPickUp(true)" ng-blur="setDropOff(true)" ng-focus="disableTap('ride_pickup_address')" id="ride_pickup_address">
+                    </label>
+                    <label class="item item-input item-custom">
+                        <div class="input-label">
+                            {{ "Drop off" | translate }}
+                        </div>
+                        <input type="text" ng-model="ride.dropoff_address" ng-keyup="setDropOff($event)" sb-google-autocomplete on-address-change="setDropOff(true)" ng-blur="setDropOff(true)" ng-focus="disableTap('ride_dropoff_address')" id="ride_dropoff_address">
+                    </label>
+                    <div class="item item-custom item-text-wrap" ng-if="route_error">
+                      <center>
+                        <strong>
+                          {{ "We couldn't find a matching route for your destination..." | translate}}
+                        </strong>
+                      </center>
+                    </div>
+                </div>
+
+                <div class="center_marker homepage-custom" ng-if="passenger && !has_request">
+                    <img ng-src="{{pickup_pin}}">
+                </div>
+
+                <button ng-click="goOnline()" class="button button-custom fab driver-status-toggle" ng-if="driver && accepted && !isDriverOnline && !has_request">
+                    {{"Go online !" | translate }}
+                </button>
+
+                <button ng-click="goOffline()" class="button button-custom fab driver-status-toggle" ng-if="driver && accepted && isDriverOnline && !has_request">
+                    {{"Go offline !" | translate }}
+                </button>
+
+                <button ng-click="centerWithGPS()" class="button button-custom fab locate" ng-show="passenger || (driver && accepted && isDriverOnline && myLocationMarker && map_moved_by_user)">
+                    <i class="icon ion-pinpoint"></i>
+                </button>
+
+                <button ng-click="showSideMenu()" class="button button-custom fab sidemenu">
+                    <i class="icon ion-grid"></i>
+                </button>
+
+                <a href="tel:{{ contact_phone }}" class="button button-custom fab clickToCall" ng-show="has_request && contact_phone">
+                    <i class="icon ion-android-call"></i>
+                </a>
+
+                <a href="javascript:void(0)" class="button button-assertive fab clickToCancel" ng-show="has_request" ng-click="cancelStatus()">
+                    <i class="icon ion-close-round"></i>
+                </a>
+
+                <a href="javascript:void(0)" class="button button-balanced clickToStart" ng-show="request_is_accepted && driver" ng-click="startRide()" >
+                    <i class="icon ion-ios-body"></i> {{ "aboard" | translate}}
+                </a>
+
+                <a href="javascript:void(0)" class="button button-balanced clickToFinish" ng-show="request_is_ongoing && driver" ng-click="finishStatus()" >
+                    {{ "Finished" | translate}}
+                </a>
+
+                <div ng-click="showFloatingInfos()" class="button button-custom go" ng-show="showGoBtn" ng-if="!has_request">
+                    <p>
+                        {{ "GO!" | translate }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+<style>
+
+ #mapContainer, #map, #mapOverlay, #greyOverlay {
+     height: 100%;
+ }
+
+ #mapOverlay, #greyOverlay {
+     position: absolute;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+ }
+
+ #mapOverlay {
+     pointer-events:none;
+     background: transparent !important;
+     z-index: 1001;
+ }
+
+ #greyOverlay {
+     pointer-events: auto;
+     background: rgba(127,127,127, 0.5);
+     z-index: 1000;
+ }
+
+ #mapOverlay * {
+     pointer-events: auto;
+ }
+
+ #mapOverlay .center_marker, #mapOverlay .center_marker * {
+     pointer-events: none;
+ }
+
+ #mapOverlay .center_marker {
+     background: transparent !important;
+     position: absolute;
+     font-size: 50px;
+     text-align: center;
+     width: 60px;
+     height: 60px;
+     top: 50%;
+     left: 50%;
+
+     /* Valeurs ajustées par rapport à l'icone */
+     margin-left: -14px;
+     margin-top: -60px;
+
+     text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+ }
+
+ #mapOverlay .center_marker i.icon {
+     margin-top: -20px;
+ }
+
+ #floating_addresses {
+     margin: 5%;
+     margin-top: 20px;
+ }
+
+ #driver_not_accepted {
+     position: absolute;
+     height: 200px;
+     width: 300px;
+     top: 50%;
+     left:50%;
+     margin-top: -100px;
+     margin-left: -150px;
+     font-size: 20px;
+     padding-top: 40px;
+     padding: 20px;
+     text-align: center;
+     display: table;
+     -moz-box-shadow: 0px 3px 15px 4px #656565;
+     -webkit-box-shadow: 0px 3px 15px 4px #656565;
+     -o-box-shadow: 0px 3px 15px 4px #656565;
+     box-shadow: 0px 3px 15px 4px #656565;
+     filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
+ }
+
+ #driver_not_accepted .cell {
+     display: table-cell;
+     vertical-align: middle;
+     text-align: center;
+ }
+
+ .fab {
+	   border:none;
+     font-size:1.5em;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     margin: auto;
+     -webkit-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+     -moz-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+     box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+     position: absolute;
+     bottom: 20px;
+     right: 20px;
+ }
+
+ .fab.driver-status-toggle {
+     width: 74px;
+     height: 74px;
+     right: 50%;
+     margin-right: -37px;
+     line-height: 20px;
+     font-size: 16px;
+ }
+
+ .fab.sidemenu {
+     z-index: 9999;
+ }
+
+ .fab.locate {
+     bottom: 80px;
+ }
+
+ .fab.clickToCall {
+     left: 10px;
+     right: auto;
+ }
+
+ .fab.clickToCancel {
+     left: 72px;
+     right: auto;
+ }
+
+ .clickToFinish, .clickToStart {
+     left: 142px;
+     right: auto;
+     bottom: 20px;
+     -webkit-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+     -moz-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+     box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+     position: absolute;
+ }
+
+ .go {
+    position: absolute;
+    font-size: 17px;
+    text-align: center;
+    top: 51%;
+    left: 42%;
+    min-height: 10px;
+    border-radius:35px;
+    border:none;
+    -webkit-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+    -moz-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+    box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+ }
+
+</style>

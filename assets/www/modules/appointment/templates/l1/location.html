@@ -1,0 +1,306 @@
+<ion-view class="view_appointment">
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+    <ion-tabs class="tabs-icon-top tabs-negative tabs-top">
+        <ion-tab class="item item-custom" title="{{location_title}}" icon="ion-ios-location-outline icon-custom" ng-click="loadlocation(0)">
+        </ion-tab>
+        <ion-tab class="item item-custom" title="{{category_title}}" icon="ion-ios-browsers-outline icon-custom" ng-click="loadcategory(1)">
+        </ion-tab>
+        <ion-tab class="item item-custom" title="{{service_title}}" icon="ion-ios-gear-outline icon-custom" ng-click="loadservice(2)">
+        </ion-tab>
+        <ion-tab class="item item-custom" title="{{provider_title}}" icon="ion-ios-person-outline icon-custom" ng-click="loadprovider(3)">
+        </ion-tab>
+        <ion-tab class="item item-custom" title="{{date_title}}" icon="ion-ios-calendar-outline icon-custom" ng-click="loaddate(4)">
+        </ion-tab>
+        <ion-tab class="item item-custom" title="{{info_title}}" icon="ion-ios-information-outline icon-custom" ng-click="loadinfo(5)">
+        </ion-tab>
+        <ion-tab class="item item-custom" title="{{confirm_title}}" icon="ion-ios-checkmark-outline icon-custom" ng-click="loadconfirm(6)">
+        </ion-tab>
+    </ion-tabs>
+    <ion-content class="has-tabs-top appointment" sb-background-image>
+        <div class="loader" ng-show="is_loading">
+            <ion-spinner class="spinner-custom"></ion-spinner>
+        </div>
+        <div class="tabs-container">
+            <!-- Locations -->
+            <div class="tab-locations" ng-show="showLocations && !is_loading">
+                <div class="list {{ settings.design_style }}" ng-show="locations.length">
+                    <div class="item item-divider item-divider-custom" ng-if="!locations.length">
+                        <h2 class="padding">{{ "Location Not Present" | translate }}</h2>
+                    </div>
+                    <div class="item item-divider item-divider-custom" ng-if="locations.length">
+                        <h2>{{ "Choose Location" | translate }}</h2>
+                    </div>
+                    <div class="item item-custom item-location" ng-click="gotoloc(location.location_id)" ng-repeat="location in locations">
+                        <div class="row">
+                            <div class="col col-90">
+                                <h2>{{ location.name }}</h2>
+                                <p class="subtitle" ng-if="location.address" ng-bind-html="location.address"></p>
+                            </div>
+                            <div class="col col-10">
+                                <i class="item-note ion-chevron-right arrow-center"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Locations -->
+            <!-- Categories -->
+            <div class="tab-categories" ng-show="showCategories && !is_loading">
+                <div class="list {{ settings.design_style }}">
+                    <div class="item item-divider item-divider-custom" ng-if="!categories.length">
+                        <h2 class="padding">{{ "Category Not Present" | translate }}</h2>
+                    </div>
+                    <div class="item item-divider item-divider-custom" ng-if="categories.length">
+                        <h2>{{ "Choose Category" | translate }}</h2>
+                    </div>
+                    <div class="item item-custom item-category" ng-click="gotoCategory(category.category_id)" ng-if="categories.length" ng-repeat="category in categories">
+                        <div class="row">
+                            <div class="col col-90">
+                                <h2>{{ category.name }}</h2>
+                            </div>
+                            <div class="col col-10">
+                                <i class="item-note ion-chevron-right arrow-center"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Categories -->
+            <!-- Services -->
+            <div class="tab-services" ng-show="showServices && !is_loading">
+                <div class="list {{ settings.design_style }}" ng-show="services.length">
+                    <div class="item item-divider item-divider-custom" ng-if="!services.length">
+                        <h2 class="padding">{{ "Service Not Present" | translate }}</h2>
+                    </div>
+                    <div class="item item-divider item-divider-custom" ng-if="services.length">
+                        <h2>{{ "Choose Service" | translate }}</h2>
+                    </div>
+                    <div class="item item-custom service" ng-click="gotoService(service.service_id, service.name)" ng-repeat="service in services">
+                        <div class="row">
+                            <div class="col col-100">
+                                <h2>{{ service.name }}</h2>
+                            </div>
+                        </div>
+                        <div class="row price">
+                            <div class="col col-100">
+                                <span class="duration">{{ service.service_time }} {{ "min" | translate }}</span>
+                                <b class="service-price">{{ service.price}}</b>
+                                <i class="item-note ion-chevron-right arrow-center"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Services -->
+            <!-- Providers -->
+            <div class="tab-providers" ng-show="showProviders && !is_loading">
+                <div class="list {{ settings.design_style }}" ng-show="providers.length">
+                    <div class="item item-divider item-divider-custom" ng-if="!providers.length">
+                        <h2 class="padding">{{ "Provider Not Present" | translate }}</h2>
+                    </div>
+                    <div class="item item-divider item-divider-custom" ng-if="providers.length">
+                        <h2>{{ "Choose Provider" | translate }}</h2>
+                    </div>
+                    <div ng-repeat="provider in providers" class="providers_gap">
+                        <div class="item item-custom item-thumbnail-custom provider" ng-click="gotoProvider(provider.provider_id, provider.name)" >
+                            <div class="row">
+                                <div class="col col-90">
+                                    <img ng-if="provider.image" ng-src="{{ base_url }}/{{ provider.image }}" />
+                                    <img ng-if="!provider.image" ng-src="{{ base_url }}/app/local/modules/Appointment/resources/media/library/demo_person.png" />
+                                    <h2>{{ provider.name }}</h2>
+                                    <span ng-if="provider.description != ''" ng-click="show_pro_info(provider.provider_id);$event.stopPropagation()">
+                                        <i class="ion-ios-information-outline"></i>
+                                    </span>
+                                </div>
+                                
+                                <div class="col col-10">
+                                    <i class="item-note ion-chevron-right arrow-center"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div ng-if="prv == provider.provider_id" class="item item-custom arrow_box">
+                            {{ provider.description }}
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Calendar & Time -->
+            <div>
+                <!-- Calendar -->
+                <div class="part-calendar" ng-show="showCalendar">
+                    <div class="list {{ settings.design_style }}" ng-show="providers.length">
+                        <div class="item item-divider item-divider-custom">
+                            <h2 class="center">{{ "Choose a Date and Time" | translate }}</h2>
+                        </div>
+                        <div class="item item-custom calendar">
+                            <div id="calendar"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Calendar -->
+                <div class="loader" ng-show="is_loading_time">
+                    <ion-spinner class="spinner-custom"></ion-spinner>
+                </div>
+                <!-- Time -->
+                <div class="part-time" ng-show="showTime && !is_loading_time">
+                    <div class="list {{ settings.design_style }}" ng-show="providers.length">
+                        <div class="item item-divider item-divider-custom" ng-show="no_time">
+                            <h4>{{message}}</h4>
+                        </div>
+                        <div class="part-time-available" ng-show="time_persent">
+                            <div class="row item item-divider item-divider-custom">
+                                <div class="col col-33">
+                                    <b>{{ "Morning" | translate }}</b>
+                                </div>
+                                <div class="col col-33">
+                                    <b>{{ "Afternoon" | translate }}</b>
+                                </div>
+                                <div class="col col-33">
+                                    <b>{{ "Evening" | translate }}</b>
+                                </div>
+                            </div>
+                            <div class="row item item-custom time-slots">
+                                <div class="col col-33">
+                                    <div ng-repeat="(k,v) in morningTime">
+                                        <a ng-click="gotoDateTime(k,v)">{{ v }}</a>
+                                        <br />
+                                    </div>
+                                </div>
+                                <div class="col col-33">
+                                    <div ng-repeat="(k,v) in afternoonTime">
+                                        <a style="cursor: pointer" ng-click="gotoDateTime(k,v)">{{v}}</a>
+                                        <br />
+                                    </div>
+                                </div>
+                                <div class="col col-33">
+                                    <div ng-repeat="(k,v) in eveningTime">
+                                        <a style="cursor: pointer" ng-click="gotoDateTime(k,v)">{{v}}</a>
+                                        <br />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Time -->
+            </div>
+            <!-- /Calendar & Time -->
+            <!-- Informations -->
+            <div class="tab-informations" ng-show="showInformation && !is_loading">
+                <form name="informationForm" ng-submit="gotoInformation()">
+                    <div class="list {{ settings.design_style }}">
+                        <div class="item item-divider item-divider-custom">
+                            <h2>{{ "Edit the options" | translate }}</h2>
+                        </div>
+                        <label class="item item-custom item-input item-stacked-label">
+                            <span class="input-label">{{ "Name" | translate}}</span>
+                            <input type="text" placeholder='{{ "Enter Your Name" | translate }}' ng-model="input.Name" name="name" required>
+                            <div ng-show="informationForm.$submitted || informationForm.name.$touched">
+                                <div ng-show="informationForm.name.$error.required">{{ "Tell us your name" | translate }}</div>
+                            </div>
+                        </label>
+                        <label class="item item-custom item-input item-stacked-label">
+                            <span class="input-label">{{ "Email" | translate }}</span>
+                            <input type="email" placeholder='{{ "Enter Your Email" | translate }}' ng-model="input.Email" name="email" required>
+                            <span class="error" ng-show="informationForm.email.$error.required">{{ "Required!" | translate }}</span>
+                            <span class="error" ng-show="informationForm.email.$error.email">{{ "Not a valid email!" | translate }}</span>
+                        </label>
+                        <label class="item item-custom item-input item-stacked-label">
+                            <span class="input-label">{{ "Phone No." | translate }}</span>
+                            <input type="text" placeholder='{{ "Enter Your Number!" | translate }}' ng-model="input.PhoneNo" name="phone" ng-pattern="phoneNumber" required>
+                            <div ng-show="informationForm.$submitted || informationForm.phone.$touched">
+                                <span class="error" ng-show="informationForm.phone.$error.required">{{ "Required!" | translate }}</span>
+                                <span class="error" ng-show="informationForm.phone.$error.minlength">{{ "Phone no not less that 10 char." | translate }}</span>
+                                <span class="error" ng-show="informationForm.phone.$error.maxlength">{{ "Phone no not more than 12 char." | translate }}</span>
+                                <br />
+                                <span class="error" ng-show="informationForm.phone.$error.pattern">{{ "Please enter valid number" | translate }}</span>
+                            </div>
+                        </label>
+                        <label class="item item-custom item-input item-stacked-label">
+                            <span class="input-label">{{ "Booking Notes" | translate }}</span>
+                            <textarea rows="4" cols="50" ng-model="input.notes" placeholder='{{ "(optional)" | translate }}'></textarea>
+                        </label>
+                        <input style="padding: 0; margin: 0;" type="hidden" name="customer_id" ng-model="input.customer_id">
+                        <button type="submit" class="button button-custom button-block">{{ "Submit" | translate }}</button>
+                    </div>
+                </form>
+            </div>
+            <!-- /Informations -->
+            <!-- Confirm informations -->
+            <div class="tab-confirm-informations" ng-show="showConfirmInformation && !is_loading">
+                <div class="list {{ settings.design_style }}">
+                    <div class="item item-divider item-divider-custom">
+                        <h2>{{ "Confirm your information" | translate }}</h2>
+                    </div>
+                    <div class="item item-custom">
+                        <b>{{ "Service" | translate }}</b>
+                        <p>{{ service_name }}</p>
+                    </div>
+                    <div class="item item-custom">
+                        <b>{{ "Provider" | translate }}</b>
+                        <p>{{ provider_name }}</p>
+                    </div>
+                    <div class="item item-custom">
+                        <b>{{ "Date & Time" | translate }}</b>
+                        <p>{{ date }}</p>
+                        <p>{{ time }}</p>
+                    </div>
+                    <div class="item item-custom">
+                        <b>{{ "Your Information" | translate }}</b>
+                        <p>{{ input.Name }}</p>
+                        <p>{{ input.Email }}</p>
+                        <p>{{ input.PhoneNo }}</p>
+                    </div>
+                    <button class="button button-block button-custom" ng-click="gotoBookAppointment()">
+                        {{ "Confirm" | translate }}
+                    </button>
+                </div>
+            </div>
+            <!-- /Confirm informations -->
+            <!-- Thanks -->
+            <div class="tab-thanks" ng-show="thankyoupage && !is_loading">
+                <div class="list {{ settings.design_style }}">
+                    <div ng-show="appointment_success">
+                        <div class="item item-divider item-divider-custom">
+                            <h2 class="thanx_msg">{{success}}</h2>
+                        </div>
+                        <div class="item item-custom">
+                            <p class="thank_text_last" ng-if="notification_time == 1">{{ "You'll be notified 30 min before the appointment." | translate }}</p>
+                            <p class="thank_text_last" ng-if="notification_time == 2">{{ "You'll be notified 1hr before the appointment." | translate }}</p>
+                            <p class="thank_text_last" ng-if="notification_time == 3">{{ "You'll be notified 2hr before the appointment." | translate }}</p>
+                            <p class="thank_text_last" ng-if="notification_time == 4">{{ "You'll be notified 1 day before the appointment." | translate }}</p>
+                            <p class="thank_text_last" ng-if="notification_time == 5">{{ "You'll be notified 1 week before the appointment." | translate }}</p>
+                        </div>
+                    </div>
+                    <div ng-show="appointment_error">
+                        <div class="item item-divider item-divider-custom">
+                            <h2 class="error">{{error}}</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Thanks -->
+        </div>
+    </ion-content>
+</ion-view>
+<style>
+/*.item.arrow_box {
+	position: relative;
+    padding: 7px !important;
+    text-overflow: inherit !important;
+    white-space: normal !important;
+    margin-top: 3px;
+    border: 0;
+    
+}
+.provider{
+    border: 0;
+}
+.item.arrow_box::before {
+	
+}
+.providers_gap{
+    margin: 0px 0 10px;
+}*/
+</style>

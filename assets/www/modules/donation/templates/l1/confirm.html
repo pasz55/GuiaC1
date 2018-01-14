@@ -1,0 +1,13 @@
+<ion-view class="view-donation">
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+
+    <ion-content sb-background-image>
+        <ion-list>
+            <ion-item class="item item-custom">
+                <span class="congrats">{{ msg_congrats }}</span>
+                <br/>
+                <span class="congrats-amount">{{ "You've donated :" | translate }} {{ amount_to_donate }} {{ currency }}</span>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

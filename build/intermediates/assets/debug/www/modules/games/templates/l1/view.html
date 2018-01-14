@@ -1,0 +1,45 @@
+<ion-view class="games_list">
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+    <div>
+        <ion-content sb-background-image class="games">
+            <div class="loader" ng-show="is_loading">
+                <ion-spinner class="spinner-custom"></ion-spinner>
+            </div>
+            <!-- List style -->
+            <div ng-show="!is_loading" ng-if="!settings.design_style || settings.design_style == 'list'">
+                <div class="cover_image">
+                    <img ng-if="settings.cover_image" ng-src="{{ settings.cover_image }}" />
+                </div>
+                <div class="list" ng-repeat="game in games">
+                    <a class="item item-thumbnail-left" href="#" ng-click="loadgame(game.key)">
+                      <img ng-src="{{ game.img }}">
+                      <h2>{{ game.name }}</h2>
+                      <i ng-if="game.exist == true" class="ion-ios-checkmark-outline"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- /List style -->
+
+            <!-- Card style -->
+            <div ng-if="settings.design_style == 'card'">
+
+                <div class="card cover_image">
+                    <img ng-if="settings.cover_image" ng-src="{{ settings.cover_image }}" />
+                </div>
+
+                <div class="card" ng-repeat="game in games">
+                    <a class="item item-thumbnail-left" href="#" ng-click="loadgame(game.key)">
+                      <img ng-src="{{ game.img }}">
+                      <h2>{{ game.name }}</h2>
+                      <i ng-if="game.exist == true" class="ion-ios-checkmark-outline"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- /Card style -->
+            
+            <div ng-if="tst" >
+                <progress id="progressbar" max="100" value="{{ progressval }}"> </progress>
+            </div>
+        </ion-content>
+    </div>
+</ion-view>

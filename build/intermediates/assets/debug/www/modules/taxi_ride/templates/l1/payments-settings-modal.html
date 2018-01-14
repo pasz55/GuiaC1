@@ -1,0 +1,109 @@
+<ion-modal-view sb-page-background class="taxiride payment-settings-modal homepage-custom" ng-controller="TaxiRidePaymentsSettingsModalController">
+    <ion-header-bar class="bar-custom">
+        <div class="buttons">
+            <button class="button button-clear" ng-click="close()">{{ no_escape ? "Cancel" : "Close" | translate }}</button>
+        </div>
+        <h1 class="title">{{ 'Payment Settings' | translate }}</h1>
+    </ion-header-bar>
+    <ion-content>
+        <form method="post" name="payementSettingsForm" ng-submit="save()" novalidate>
+            <div class="list">
+                <div class="item item-text-wrap homepage-custom text-center" ng-if="no_escape">
+                    <p>
+                        {{"Last step: we need some informations about payments." | translate}}
+                    </p>
+                </div>
+
+                <div ng-if="role == 'driver'">
+                    <label class="item item-input item-custom">
+                        <div class="input-label">
+                            {{ "Base Fare" | translate }}
+                        </div>
+                        <input class="text-right" type="number" step="0.01"  placeholder="{{ 'Base fare' | translate }}" ng-model="payments_settings.base_fare" ng-required="true" required min="0" ng-min="0" /> 
+                    </label>
+                    <label class="item item-input item-custom item-select">
+                        <div class="input-label">
+                            {{'Billing method' | translate}}
+                        </div>
+                        <select ng-model="payments_settings.charge_mode" ng-options="mode.id as mode.label for mode in payments_settings_charge_modes">
+                        </select>
+                    </label>
+                    <label class="item item-input item-custom" ng-if="payments_settings.charge_mode == 'distance'">
+                        <div class="input-label">
+                            {{'Distance fare' | translate}}
+                        </div>
+                        <input class="text-right" type="number" step="0.01"  placeholder="{{ 'Distance fare' | translate }}" ng-model="payments_settings.distance_fare" ng-required="true" required min="0" ng-min="0" />
+                    </label>
+                    <label class="item item-input item-custom" ng-if="payments_settings.charge_mode == 'time'">
+                        <div class="input-label">
+                            {{'Duration fare' | translate}}
+                        </div>
+                        <input class="text-right" type="number" step="0.01"  placeholder="{{ 'Duration fare' | translate }}" ng-model="payments_settings.time_fare" ng-required="true" min="0" ng-min="0" >
+                    </label>
+                    <div class="item item-custom text-right subdued">
+                        {{'for every' | translate}}&nbsp;{{ payments_settings.charge_mode == 'distance' ? distance_unit == 'km' ? 'kilometer' : 'mile' : 'minute' | translate}}&nbsp;{{'driven' | translate}}
+                    </div>
+                </div>
+
+                <div ng-if="role == 'passenger'">
+                    <div class="item item-custom" ng-if="payment_methods !== 'cash' && payments_settings.card">
+                        <div class="item item-custom">
+                            <h2>
+                                <i class="icon ion-card"></i>&nbsp;
+                                XXXX-XXXX-XXXX-{{ payments_settings.card.last4 }}
+                            </h2>
+                            <p>{{ payments_settings.card.brand  }} - {{ payments_settings.card.exp_text }}</p>
+                        </div>
+                        <div class="button button-block button-custom" ng-click="removepaymentcard()" ng-if="!removing && payments_settings.card">
+                            {{ "Remove card" | translate }}
+                        </div>
+                        <div ng-if="removing">
+                            <ion-spinner class="spinner-custom"></ion-spinner>
+                        </div>
+                    </div>
+                    <div ng-if="payment_methods !== 'cash'">
+                        <div class="item item-custom" ng-click="show_card_form = !show_card_form">
+                            <div style="display:inline" ng-if="payments_settings.card">{{ "Change" | translate }}</div>
+                            <div style="display:inline" ng-if="!payments_settings.card">{{ "Add a" | translate }}</div>
+                            <div style="display:inline" >{{ "credit card" | translate }}</div>
+                        </div>
+                        <div class="item item-custom" ng-if="show_card_form">
+                            <label class="item item-custom item-input">
+                                <div class="input-label">
+                                    {{ "Code" | translate }}
+                                </div>
+                                <input ng-model="card.number" type="number" maxlength="16" ng-maxlength="16">
+                            </label>
+                            <label class="item item-custom item-input">
+                                <div class="input-label">
+                                    {{ "Exp Month" | translate }}
+                                </div>
+                                <input ng-model="card.exp_month" type="number" min="1" ng-min="1" ng-max="12" max="12" maxlength="2" ng-maxlength="2">
+                            </label>
+                            <label class="item item-custom item-input">
+                                <div class="input-label">
+                                    {{ "Exp Year" | translate }}
+                                </div>
+                                <input ng-model="card.exp_year" type="number"  maxlength="4" ng-maxlength="4">
+                            </label>
+                            <label class="item item-custom item-input">
+                                <div class="input-label">
+                                    {{ "CVC" | translate }}
+                                </div>
+                                <input ng-model="card.cvc" type="number">
+                            </label>
+                        </div>
+                    </div>
+                    <ion-checkbox  ng-if="payment_methods !== 'stripe'" class="item item-custom item-checkbox" ng-model="payments_settings.cash" ng-true-value="'cash'" ng-false-value="null">
+                        <i class="icon ion-cash"></i>&nbsp;<div style="display:inline">{{ "Use Cash" | translate }}</div>
+                    </ion-checkbox>
+                </div>
+
+                <button type="submit" class="button button-block button-custom activated" ng-show="!is_loading">{{ "Send" | translate }}</button>
+                <div class="loader" ng-show="is_loading">
+                    <ion-spinner class="spinner-custom"></ion-spinner>
+                </div>
+            </div>
+        </form>
+    </ion-content>
+</ion-modal-view>

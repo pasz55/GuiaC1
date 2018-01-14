@@ -1,0 +1,29 @@
+.view-donation .angular-with-newlines {
+  white-space: normal;
+}
+
+.view-donation .message-error {
+  color: red;
+}
+
+.view-donation .item .has-error {
+  color: red;
+  border-color: red;
+}
+
+.view-donation .loading-item {
+  text-align: center;
+}
+
+.view-donation .donate-amount {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.view-donation .row.updown {
+  padding: 0;
+}
+
+.view-donation .row.updown col {
+  padding: 0;
+}

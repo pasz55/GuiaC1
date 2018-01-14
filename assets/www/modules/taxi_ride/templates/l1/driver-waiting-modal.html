@@ -1,0 +1,75 @@
+<ion-modal-view sb-page-background class="taxiride driver-modal homepage-custom" ng-controller="TaxiRideDriverWaitingModalController">
+    <ion-header-bar class="bar-custom">
+        <div class="buttons">
+            <button class="button button-clear" ng-click="close()">{{ "Cancel" | translate }}</button>
+        </div>
+        <h1 class="title">{{ 'Choose a driver' | translate }}</h1>
+    </ion-header-bar>
+    <ion-content>
+
+        <div class="list">
+            <div class="item item-custom item-text-wrap" ng-show="is_looking_for_drivers">
+                <div class="row">
+                    <div class="col col-75 justify">
+                        {{ "Currently looking for drivers..." | translate }}
+                    </div>
+                    <div class="col col-25 timer">
+                        <span>{{ timer }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-custom item-text-wrap" ng-show="!is_looking_for_drivers && !no_driver_answer">
+                <div class="row">
+                    <div class="col col-75 justify">
+                        {{ "Driver search ended. Please choose a driver below to start your ride." }}
+                    </div>
+                    <div class="col col-25 timer">
+                        <span>{{ select_timer }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="item item-custom item-text-wrap">
+                {{prices_disclamer}}
+            </div>
+        </div>
+        <div>
+            <div class="list card"  ng-show="can_select_driver && drivers.length">
+                <div class="item item-custom item-icon-left" ng-repeat="driver in drivers">
+                    <i class="icon ion-android-car"></i>
+                    <h2>{{ driver.firstname }} {{ driver.lastname }}</h2>
+                    <p>{{ "Ride price:" | translate }} {{ driver.price | currency:currency_symbol:2 }}</p>
+                    <p>{{ "ETA:" | translate }} {{ driver.eta.text }}</p>
+                    <p>{{ "Base fare:" | translate }} {{ driver.base_fare | currency:currency_symbol:2 }}</p>
+                    <p ng-show="driver.distance_fare">{{ "Distance fare:" | translate }} {{ driver.distance_fare | currency:currency_symbol:2 }}</p>
+                    <p ng-show="driver.time_fare">{{ "Time fare:" | translate }} {{ driver.time_fare | currency:currency_symbol:2 }}</p>
+                    <p><button class="button button-custom button-full icon-right ion-chevron-right" ng-click="selectDriver(driver)">{{ "Choose me!" | translate }}</button></p>
+                </div>
+            </div>
+            <div class="item item-custom item-text-wrap justify" ng-show="!drivers.length && !no_driver_answer && is_looking_for_drivers">
+                {{ "No driver has accepted your request for now. Please wait." | translate }}
+            </div>
+            <div class="item item-custom item-text-wrap justify" ng-show="no_driver_answer">
+                {{ "Sorry, but no driver can pick you up. Please try again in a few moment." | translate }}
+            </div>
+            <div class="item item-custom item-text-wrap justify" ng-show="!can_select_driver">
+                {{ "Sorry, you haven't selected a driver before timeout. Your request has been cancelled." | translate }}
+            </div>
+        </div>
+
+    </ion-content>
+
+    <style type="text/css">
+        .justify{
+            text-align:justify;
+        }
+        .timer{
+            font-size:35px;
+            font-weight:bold;
+            text-align:center;
+        }
+    </style>
+
+
+</ion-modal-view>

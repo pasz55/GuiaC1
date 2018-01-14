@@ -1,0 +1,114 @@
+<ion-view>
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+    <ion-nav-buttons side="right">
+        <button class="button button-custom button-icon icon" ng-click="goTo('cart')">
+            <i class="icon ion-ios-cart"><span class="badge cart-badge">{{ cart_qty }}</span></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="secondary">
+        <button class="button button-custom button-icon icon" ng-click="goTo('home')">
+            <i class="icon ion-ios-home"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content sb-background-image>
+        <div class="list">
+            <div ng-show="beadcrumb.length" class="row bead-container">
+                <div class="bead-step item item-custom item-icon-right" ng-repeat="bead in beadcrumb" ng-click="showCategory(bead.id)">
+                    {{ bead.name }}
+                    <i class="icon ion-chevron-right"></i>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Parent -->
+                <div class="item col item-custom">
+                    <div class="h3 categ-title"><i class="icon ion-ios-albums-outline"></i> {{category.name}}</div>
+                    <div class="item item-custom item-body" ng-if="category.image.src || category.description">
+                        <img ng-show="category.image.src" class="full-image" ng-src="{{category.image.src}}" />
+                        <p class="text-justify" ng-show="category.description" ng-bind-html="category.description"></p>
+                    </div>
+                    <!-- Sub-categories -->
+                    <div ng-if="children.length > 0">
+                        <ul class="list">
+                            <li class="item item-custom" ng-repeat="c in children" ng-click="showCategory(c.id)">
+                                <div class="text-wrap">
+                                    <h2 class="text-center uppercase">{{c.name}}</h2>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div sb-products products="products" value-id="value_id"></div>
+            <div class="item item-custom item-text-wrap" ng-show="products != null && !products.length">
+                {{ "No products for now." | translate }}
+            </div>
+            <div class="item item-custom" ng-if="products == null">
+                {{ "Loading" | translate }}
+            </div>
+            <ion-infinite-scroll ng-if="hasMoreProducts()" on-infinite="loadMoreProducts()" distance="10%" spinner="none" icon="none"></ion-infinite-scroll>
+        </div>
+    </ion-content>
+    
+<style>
+    .text-justify{
+        text-align:justify
+    }
+    .row+.row {
+        margin-top: 5px;
+    }
+    .uppercase{
+        text-transform:uppercase;
+    }
+    .categ-title{
+        padding: 5px 0 0 5px;
+    }
+    .product-name{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 5px;
+    }
+    .product-price{
+        padding:5px;
+    }
+    .card{
+        margin:0;
+        position:relative;
+    }
+    .sale-badge{
+        font-size: 50px;
+        position: absolute;
+        right: 15px;
+        top:-15px;
+        color: #FFC107;
+    }
+    .out-of-stock{
+        font-size: 20px;
+        width:100%;
+        position: absolute;
+        top:15px;
+        color: #FFFFFF;
+        background-color:#FF0000;
+    }
+    .bead-step{
+        float:left;
+        font-size:10px;
+        padding: 2px;
+        padding-right:30px;
+    }
+    .bead-step .ion-chevron-right {
+        font-size: 15px;
+        right:0px;
+    }
+    .bead-container{
+        position: relative;
+        margin-top: 5px;
+    }
+    .cart-badge{
+        background-color: #F44336;
+        color:#ffffff;
+    }
+</style>
+</ion-view>

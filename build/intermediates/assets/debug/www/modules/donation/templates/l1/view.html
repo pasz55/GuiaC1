@@ -1,0 +1,88 @@
+<ion-view class="view-donation">
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+    <ion-nav-buttons side="secondary">
+        <button ui-sref="goHome()" class="button button-clear header-item"></button>
+    </ion-nav-buttons>
+
+    <ion-content sb-background-image>
+        <div ng-if="is_loading" style="text-align: center;">
+            <br/>
+            <ion-spinner></ion-spinner>
+            <br/>
+            {{ "Please wait application is loading..." | translate }}
+        </div>
+
+        <div ng-if="!is_loading">
+
+            <form novalidate name="form">
+                <ion-list class="form-group">
+                    <ion-item class="item item-custom">
+                        <span class="welcome">{{ msg_welcome }}</span>
+                    </ion-item>
+
+                    <div ng-if="is_custom_amount">
+                        <ion-item class="item item-custom">
+                            <ion-label
+                                    ng-class="{ 'has-error': (form.amount_to_donate.$error.required || form.amount_to_donate.$error.number) && form.amount_to_donate.$dirty  }">
+                                {{ 'Amount of the donation' | translate }} ( {{ currency }})
+                            </ion-label>
+                            <input type="number" placeholder="{{ 'Amount of the donation' | translate }}"
+                                   name="amount_to_donate" ng-model="data.amount_to_donate"
+                                   min="1" ng-minlength="1" required/>
+                        </ion-item>
+
+                        <ion-item class="item item-custom">
+                            <button ng-show="!vm.isApple || !vm.isToOpenInBrowser" class="button button-block button-custom" ng-click="goDonate(!form.amount_to_donate.$error.required && !form.amount_to_donate.$error.number)">
+                                <i class="icon ion-card"></i>
+                                {{ "Make a donation" | translate }}
+                            </button>
+
+                            <button ng-show="vm.isApple && vm.isToOpenInBrowser" class="button button-block button-custom" ng-click="openInNav()">
+                                <i class="icon ion-card"></i>
+                                {{ "Make a donation" | translate }}
+                            </button>
+                        </ion-item>
+                    </div>
+
+                    <div ng-if="!is_custom_amount">
+                        <ion-item class="item item-custom">
+                            <div class="row updown">
+
+                                <div class="col col-25">
+                                    <button class="button button-custom" ng-click="decreaseAmount()" style="float:left;">
+                                        <i class="icon ion-minus-circled"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col col-50 donate-amount">
+                                    <label>{{ data.amount_to_donate }} {{ currency }}</label>
+                                </div>
+
+                                <div class="col col-25">
+                                    <button class="button button-custom" ng-click="increaseAmount()" style="float:right;">
+                                        <i class="icon ion-plus-circled"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </ion-item>
+
+                        <ion-item class="item item-custom">
+                          <button ng-show="!vm.isApple || !vm.isToOpenInBrowser" class="button button-block button-custom" ng-click="goDonate(true)">
+                              <i class="icon ion-card"></i>
+                              {{ "Make a donation" | translate }}
+                          </button>
+
+                          <button ng-show="vm.isApple && vm.isToOpenInBrowser" class="button button-block button-custom" ng-click="openInNav()">
+                              <i class="icon ion-card"></i>
+                              {{ "Make a donation" | translate }}
+                          </button>
+                        </ion-item>
+                    </div>
+
+
+                </ion-list>
+            </form>
+
+        </div>
+    </ion-content>
+</ion-view>

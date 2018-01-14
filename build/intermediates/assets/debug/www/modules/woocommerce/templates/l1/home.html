@@ -1,0 +1,87 @@
+<ion-view>
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+    <sb-woo-header cart_btn="true" home_btn="true"></sb-woo-header>
+    <ion-content sb-background-image>
+        <div class="list" ng-if="store_url">
+            <div class="item item-custom">
+                <img ng-src="{{ woo_data.header }}" class="full-image"/>
+            </div>
+
+            <div class="row">
+                <div class="col col-50" ng-click="goTo('products')">
+                    <div class="text-center item item-custom item-text-wrap">
+                        <h1>
+                            <i class="icon ion-ios-pricetag"></i>
+                        </h1>
+                        <h2>{{ "Products" | translate }}</h2>
+                    </div>
+                </div>
+                <div class="col col-50" ng-click="goTo('categories')">
+                    <div class="text-center item item-custom item-text-wrap">
+                        <h1>
+                            <i class="icon ion-ios-albums-outline"></i>
+                        </h1>
+                        <h2>{{ "Categories" | translate }}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-50" ng-click="goTo('cart')">
+                    <div class="text-center item item-custom item-text-wrap">
+                        <h1>
+                            <span class="badge cart-badge-home">{{ cart_qty }}</span>
+                            <i class="icon ion-ios-cart"></i>
+                        </h1>
+                        <h2>{{ "Cart" | translate }}</h2>
+                    </div>
+                </div>
+                <div class="col col-50" ng-click="goTo('customer')">
+                    <div class="text-center item item-custom item-text-wrap">
+                        <h1>
+                            <i class="icon ion-ios-personadd"></i>
+                        </h1>
+                        <h2>{{ "New user" | translate }}</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item item-custom item-divider" ng-if="woo_data.facebook || woo_data.twitter || woo_data.instagram || store_url">
+                {{ "Social Profiles" | translate }}
+            </div>
+
+            <a class="item item-custom item-icon-left" ng-if="store_url" ng-click="openLink(store_url)">
+                <i class="icon ion-android-open"></i>
+                {{ "Our online shop" | translate }}
+            </a>
+            <a class="item item-custom item-icon-left" ng-if="woo_data.facebook" ng-click="openLink(woo_data.facebook)">
+                <i class="icon ion-social-facebook"></i>
+                Facebook
+            </a>
+            <a class="item item-custom item-icon-left" ng-if="woo_data.twitter" ng-click="openLink(woo_data.twitter)">
+                <i class="icon ion-social-twitter"></i>
+                Twitter
+            </a>
+            <a class="item item-custom item-icon-left" ng-if="woo_data.instagram" ng-click="openLink(woo_data.instagram)">
+                <i class="icon ion-social-instagram"></i>
+                Instagram
+            </a>
+
+        </div>
+        <div class="item item-custom item-text-wrap" ng-if="!store_url && !loading">
+            {{ "Configuration error. Please contact an administrator." | translate }}
+        </div>
+        <div class="item item-custom" ng-if="loading">
+            {{ "Loading" | translate }}
+        </div>
+    </ion-content>
+    <style>
+        .cart-badge-home{
+            background-color: #F44336;
+            color:#ffffff;
+            position: absolute;
+            right: 35% !important;
+            z-index: 999;
+            top: 10px !important;
+        }
+    </style>
+</ion-view>

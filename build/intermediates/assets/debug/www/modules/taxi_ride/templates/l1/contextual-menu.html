@@ -1,0 +1,37 @@
+<div class="l9">
+    <div>
+        <div class="layout l9">
+            <ion-content class="taxiride contextual-menu homepage-custom" ng-controller="TaxiRideMapSideMenuController" >
+                <ul class="items homepage-custom">
+                    <li class="border-custom" ng-click="showMyAccount()">
+                        <img ng-src="{{ my_account_icon }}" ng-if="my_account_icon" />
+                        <p>{{ "My account" | translate }}</p>
+                    </li>
+                    <li class="border-custom" ng-click="showSettings()">
+                        <i class="icon icon-custom ion-document-text"></i>
+                        <p>{{ "Settings" | translate }}</p>
+                    </li>
+                    <li class="border-custom" ng-click="showPaymentsSettings()">
+                        <i class="icon icon-custom ion-card"></i>
+                        <p>{{ "Payments Settings" | translate }}</p>
+                    </li>
+                    <li class="border-custom" ng-click="showHistorySettings()">
+                        <i class="icon icon-custom ion-clipboard"></i>
+                        <p>{{ "History" | translate }}</p>
+                    </li>
+                </ul>
+            </ion-content>
+        </div>
+    </div>
+
+    <style type="text/css">
+        .taxiride.contextual-menu .items {
+            cursor: pointer;
+        }
+        .taxiride.contextual-menu .items .icon {
+            font-size: 36px;
+        }
+    </style>
+
+
+</div>

@@ -1,0 +1,336 @@
+<div class="layout_baguera_12" ng-controller="LayoutBagueraConnectHomepageCtrl">
+
+  <ion-content  scrollbar-y="false">
+    <div id="private_policy" ng-show="display_privacy_policy">
+        <div ng-click="clickOnBackPolicy()" class="abort-policy">
+          <i class="ion-ios-arrow-back abort-icon"></i>
+        </div>
+        <div ng-include="'templates/cms/privacypolicy/l1/view.html'"></div>
+    </div>
+
+    <div ng-if="!is_logged_in" class=" border-custom">
+      <ul class="list connexion-menu">
+        <li class="item homepage-custom">
+          <div ng-click="clickOnAbort()" class="abort-div" ng-show="display_login_form || display_account_form || display_forgot_password_form">
+            <i class="ion-ios-arrow-back abort-icon"></i>
+          </div>
+          <i class="ion-android-contact avatar" style="color: {{features.layoutOptions.avatarColor}};"></i> <br/>
+
+          <!-- login form -->
+          <form method="post" name="loginForm" ng-submit="loginSubmit()" class="slide-down login-form" ng-show="display_login_form">
+            <ul class="list nospace-noborder-noback">
+              <li class="item nospace-noborder-noback">
+                <input name="mail" type="email" class="connexion-input border-custom" placeholder="{{ 'Email' | translate }}" ng-model="customer.email" />
+                <input type="password" name="pass" class="connexion-input border-custom" placeholder="{{ 'Password' | translate }}" ng-model="customer.password" />
+                <button type="submit" style="{{ bgBtnColorStyle }}" class="button button-custom button-small waves-effect connexion-signin" ng-show="!is_loading">
+                    {{ "lb12_Sign in" | translate }} <i class="ion-log-in"></i>
+                </button>
+              </li>
+              <li class="item noborder-noback forgot-margin">
+                <a class="forgot-link" href="#" ng-click="clickOnForgot()" ng-show="!is_loading">
+                    {{ "lb12_Forgot your password?" | translate }}
+                </a>
+                <ion-spinner ng-show="is_loading"></ion-spinner>
+              </li>
+            </ul>
+          </form>
+
+          <form method="post" name="forgotPasswordForm" ng-submit="forgotPasswordSubmit()" class="slide-top" ng-show="display_forgot_password_form">
+            <div class="item item-text-wrap nospace-noborder-noback">
+              <p>{{ 'lb12_Forgot your password? Enter your email address, it will be emailed to you' | translate }} :</p>
+            </div>
+            <input type="email" class="connexion-input border-custom" placeholder="{{ 'Email' | translate }}" ng-model="customer.email" />
+            <button type="submit" style="{{ bgBtnColorStyle }}" class="button button-custom button-small waves-effect send-forgot-button" ng-show="!is_loading">
+              {{ "lb12_Send me my password" | translate }}
+            </button>
+            <ion-spinner ng-show="is_loading"></ion-spinner>
+          </form>
+
+          <!-- register / create account form -->
+          <form method="post" name="accountForm" ng-submit="registerSubmit()" class="slide-top register-form" ng-show="display_account_form">
+            <div class="list nospace-noborder-noback">
+                <select ng-model="customer.civility" placeholder="{{ "Civility" | translate }}" class="civility-selector border-custom">
+                    <option class="homepage-custom" value="mlle" >{{ "Miss" | translate }}</option>
+                    <option class="homepage-custom" value="mme">{{ "Mrs" | translate }}</option>
+                    <option class="homepage-custom" value="m">{{ "Mr" | translate }}</option>
+                </select>
+
+                <input type="text" class="border-custom" placeholder="{{ 'lb12_Firstname' | translate }}" ng-model="customer.firstname" />
+                <input type="text" class="border-custom" placeholder="{{ 'lb12_Lastname' | translate }}" ng-model="customer.lastname" />
+
+                <div ng-if="optional_fields.nickname">
+                  <input type="text" class="border-custom" placeholder="{{ 'lb12_Nickname' | translate }}" ng-model="customer.nickname" />
+                </div>
+
+                <input type="email" class="border-custom" placeholder="{{ 'lb12_Email' | translate }}" ng-model="customer.email" />
+                <input type="password" class="border-custom" placeholder="{{ 'lb12_Password' | translate }}" ng-model="customer.password" />
+
+                <ion-checkbox ng-model="customer.show_in_social_gaming" ng-if="optional_fields.ranking">
+                    {{ "lb12_Show me in ranking" | translate }}
+                </ion-checkbox>
+
+                <div class="item item-icon-left policy-button border-custom" ng-click="clickOnPrivacyPolicy()" ng-if="!is_logged_in">
+                    <i class="icon ion-navicon"></i>
+                    <small>{{ "Privacy Policy" | translate }}</small>
+                </div>
+
+                <ion-checkbox class="checkbox-custom check-policy border-custom" ng-model="customer.privacy_policy" ng-if="!is_logged_in">
+                    <div class="accept-privacy"><small>{{ "lb12_I accept the privacy policy" | translate }}</small></div>
+                </ion-checkbox>
+
+                <section ng-repeat="cfo in custom_fields track by cf.code">
+                    <div class="item item-divider noborder-noback displayPrivacyPolicy('account')">
+                        <p>{{ cfo.name }}:</p>
+                    </div>
+
+                    <label ng-repeat="cf in cfo.custom_fields" class="item item-input nospace-noborder-noback">
+                        <div class="input-label nospace-noborder-noback">
+                            {{ cf.label | translate }}
+                        </div>
+                        <input class="text-right border-custom"  type="{{cf.type}}" placeholder="{{ cf.label | translate }}" ng-model="customer.metadatas[cfo.code][cf.key]" />
+                    </label>
+                </section>
+
+                <button type="submit" style="{{ bgBtnColorStyle }}" class="button button-custom button-small waves-effect button-send" ng-show="!is_loading">
+                  {{ "lb12_Sign up" | translate }}
+                  <i class="ion-android-send"></i>
+                </button>
+                <ion-spinner ng-show="is_loading"></ion-spinner>
+            </div>
+
+            <section class="avatar text-center nospace-noborder-noback" ng-if="customer.metadatas.fidelity_points" ng-show="customer.metadatas.fidelity_points.points > 0">
+                <label class="item nospace-noborder-noback">
+                    <i class="ion-ios-information-outline"></i><strong> {{ "lb12_Your points" | translate }}</strong>
+                </label>
+
+                <div class="item nospace-noborder-noback">
+                    {{ customer.metadatas.fidelity_points.points }}
+                </div>
+                <br/>
+            </section>
+
+            <section class="avatar text-center nospace-noborder-noback" ng-if="show_avatar" ng-show="customer.stripe">
+                <label class="item nospace-noborder-noback">
+                    <i class="ion-ios-information-outline"></i><strong> {{ "Stored card information." | translate }}</strong>
+                </label>
+
+                <!-- SHOW CARD -->
+                <div ng-show="customer.stripe.brand" class="item nospace-noborder-noback">
+                    {{ "XXXX XXXX XXXX" }} {{ customer.stripe.last4 }}
+                    <br />
+                    {{ "CVC ***" }} - {{ "EXP" }} {{ customer.stripe.exp_month }}/{{ customer.stripe.exp_year }}
+                </div>
+                <button ng-show="customer.stripe.brand" style="{{ bgBtnColorStyle }}" type="button" class="button button-custom button-small waves-effect" ng-click="unloadcard()">{{ "Remove card" | translate }}</button>
+
+                <!-- ADD CARD -->
+                <label ng-show="!customer.stripe.brand" class="item item-text-wrap nospace-noborder-noback">
+                    {{ "You have no card stored. To add a card make an order." | translate }}
+                </label>
+            </section>
+          </form>
+
+
+          <button style="{{ bgBtnColorStyle }}" class="button button-custom button-small waves-effect connexion-button"
+            ng-click="clickOnConnexion()" ng-show="!display_login_form && !display_forgot_password_form && !display_account_form">
+            {{ "lb12_Connection" | translate }}  <i class="ion-log-in connexion-icon"></i>
+          </button>
+          <button style="{{ bgBtnColorStyle }}" class="button button-custom button-small waves-effect connexion-button create-account-button"
+            ng-show="!display_login_form && !display_forgot_password_form && !display_account_form" ng-click="clickOnCreateAccount()">
+            {{ "lb12_Create account" | translate }}  <i class="ion-person-add connexion-icon"></i>
+          </button>
+          <button style="{{ bgBtnColorStyle }}" class="button button-custom button-small waves-effect connexion-button-facebook" ng-click="loginWithFacebook()" ng-show="can_connect_with_facebook && display_login_form">
+            {{ "lb12_Or sign in with Facebook" | translate }} <i class="ion-social-facebook connexion-icon"></i>
+          </button>
+
+        </li>
+      </ul>
+    </div>
+
+    <!-- online form (avatar, edit, logout, etc) -->
+    <div ng-if="is_logged_in && !display_account_form && !display_edit_form && !display_edit_form" class="homepage-custom logout-form">
+      <div ng-click="clickOnlogout()" class="logout-div">
+        <i class="ion-power logout-icon" ng-show="!is_loading"></i>
+      </div>
+
+      <div ng-click="clickOnEdit()" class="edit-div">
+        <i class="ion-edit logout-icon" ng-show="!is_loading"></i>
+      </div>
+
+      <div class="avatar-container">
+        <div class="avatar text-center padding" ng-if="show_avatar" ng-show="avatar_loaded">
+          <img ng-src="{{ avatar_url }}" ng-click="clickOnEdit()" class="padding stable-bg stable-border avatar-img" sb-load="avatarLoaded()" />
+        </div>
+      </div>
+
+      <div class="avatar-nick" ng-if="customer.nickname && !is_loading">
+        <small>{{ "lb12_Welcome" | translate }} {{ customer.nickname }}</small>
+      </div>
+
+      <div class="avatar-nick" ng-if="(customer.firstname || customer.firstname)  && !is_loading">
+        <small>{{ "lb12_Welcome" | translate }} {{ customer.firstname }} {{ customer.lastname }}</small>
+      </div>
+
+      <div class="avatar-nick" ng-if="!customer.nickname && !customer.firstname && !customer.firstname  && !is_loading">
+        <small>{{ customer.email }}</small>
+      </div>
+
+      <div class="avatar-nick" ng-show="is_loading">
+        <ion-spinner ng-show="is_loading"></ion-spinner>
+      </div>
+    </div>
+
+    <div ng-if="is_logged_in && display_edit_form" class="">
+
+      <ul class="list connexion-menu">
+        <li class="item homepage-custom">
+          <!-- edit account -->
+          <form method="post" name="editForm" ng-submit="editAccountSubmit()" class="slide-top register-form" ng-show="display_edit_form">
+
+            <div class="list nospace-noborder-noback">
+
+              <div ng-click="clickOnAbortEdit()" class="abort-div">
+                <i class="ion-ios-arrow-back abort-icon"></i>
+              </div>
+
+              <section class="avatar text-center padding" ng-if="show_avatar" ng-show="avatar_loaded">
+                  <div>
+                      <img ng-src="{{avatar_url}}" class="padding stable-bg stable-border" ng-click="editAvatar()" sb-load="avatarLoaded()" sb-error="hideAvatar()" />
+                  </div>
+              </section>
+
+              <div class="list nospace-noborder-noback">
+                  <select ng-model="customer.civility" placeholder="{{ "Civility" | translate }}" class="civility-selector border-custom">
+                      <option class="homepage-custom" value="mlle" >{{ "Miss" | translate }}</option>
+                      <option class="homepage-custom" value="mme">{{ "Mrs" | translate }}</option>
+                      <option class="homepage-custom" value="m">{{ "Mr" | translate }}</option>
+                  </select>
+
+                  <input type="text" class="border-custom" placeholder="{{ 'lb12_Firstname' | translate }}" ng-model="customer.firstname" />
+                  <input type="text" class="border-custom" placeholder="{{ 'lb12_Lastname' | translate }}" ng-model="customer.lastname" />
+
+                  <div ng-if="optional_fields.nickname">
+                    <input type="text" class="border-custom" placeholder="{{ 'lb12_Nickname' | translate }}" ng-model="customer.nickname" />
+                  </div>
+
+                  <input type="email" class="border-custom" placeholder="{{ 'lb12_Email' | translate }}" ng-model="customer.email" />
+
+                  <ion-checkbox class="checkbox-custom check-pass nospace-noborder-noback" ng-model="customer.change_password">
+                    {{ 'lb12_Change Password' | translate }}
+                  </ion-checkbox>
+
+                  <div ng-show="customer.change_password">
+                    <input class="text-right border-custom" style="padding-right: 10px;" type="password" placeholder="{{ 'Old Password' | translate }}" ng-disabled="!customer.change_password" ng-model="customer.old_password" />
+                    <input class="text-right border-custom" style="padding-right: 10px;" type="password" placeholder="{{ 'Password' | translate }}" ng-model="customer.password" ng-disabled="!customer.change_password && is_logged_in" />
+                  </div>
+
+                  <ion-checkbox ng-model="customer.show_in_social_gaming" ng-if="optional_fields.ranking">
+                      {{ "lb12_Show me in ranking" | translate }}
+                  </ion-checkbox>
+
+                  <div class="item item-icon-left policy-button border-custom" ng-click="clickOnPrivacyPolicy()" ng-if="!is_logged_in">
+                      <i class="icon ion-navicon"></i>
+                      <small>{{ "Privacy Policy" | translate }}</small>
+                  </div>
+
+                  <ion-checkbox class="checkbox-custom check-policy border-custom" ng-model="customer.privacy_policy" ng-if="!is_logged_in">
+                      <div class="accept-privacy"><small>{{ "lb12_I accept the privacy policy" | translate }}</small></div>
+                  </ion-checkbox>
+
+                  <section ng-repeat="cfo in custom_fields track by cf.code">
+                      <div class="item item-divider noborder-noback displayPrivacyPolicy('account')">
+                          <p>{{ cfo.name }}:</p>
+                      </div>
+
+                      <label ng-repeat="cf in cfo.custom_fields" class="item item-input nospace-noborder-noback">
+                          <input class="text-right border-custom" type="{{cf.type}}" placeholder="{{ cf.label | translate }}" ng-model="customer.metadatas[cfo.code][cf.key]" />
+                      </label>
+                  </section>
+
+                  <button style="{{ bgBtnColorStyle }}" type="submit" class="button button-custom button-small waves-effect button-send" ng-show="!is_loading">
+                    {{ "lb12_Save" | translate }}
+                    <i class="ion-checkmark-round"></i>
+                  </button>
+                  <ion-spinner ng-show="is_loading"></ion-spinner>
+              </div>
+
+              <section class="avatar text-center nospace-noborder-noback" ng-if="customer.metadatas.fidelity_points" ng-show="customer.metadatas.fidelity_points.points > 0">
+                  <label class="item nospace-noborder-noback">
+                      <i class="ion-ios-information-outline"></i><strong> {{ "lb12_Your points" | translate }}</strong>
+                  </label>
+
+                  <div class="item nospace-noborder-noback">
+                      {{ customer.metadatas.fidelity_points.points }}
+                  </div>
+                  <br/>
+              </section>
+
+              <section class="avatar text-center nospace-noborder-noback" ng-if="show_avatar" ng-show="customer.stripe">
+                  <label class="item nospace-noborder-noback">
+                      <i class="ion-ios-information-outline"></i><strong> {{ "Stored card information." | translate }}</strong>
+                  </label>
+
+                  <!-- SHOW CARD -->
+                  <div ng-show="customer.stripe.brand" class="item nospace-noborder-noback">
+                      {{ "XXXX XXXX XXXX" }} {{ customer.stripe.last4 }}
+                      <br />
+                      {{ "CVC ***" }} - {{ "EXP" }} {{ customer.stripe.exp_month }}/{{ customer.stripe.exp_year }}
+                  </div>
+                  <button ng-show="customer.stripe.brand" type="button" style="{{ bgBtnColorStyle }}" class="button button-custom button-small waves-effect" ng-click="unloadcard()">{{ "Remove card" | translate }}</button>
+
+                  <!-- ADD CARD -->
+                  <label ng-show="!customer.stripe.brand" class="item item-text-wrap nospace-noborder-noback">
+                      {{ "You have no card stored. To add a card make an order." | translate }}
+                  </label>
+              </section>
+            </div>
+          </form>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-wrapper homepage-custom">
+      <div ng-if="!has_loggin_features">
+        <ul class="app-menu">
+          <li ng-repeat="feature in features.overview.options" class=" menu-item border-custom" tabbar-items option="feature" id="feature-{{ $index }}" go-to-url="goTo(feature)">
+            <ul class="cel-flex-container">
+              <li class="cel-flex-item">
+                <div ng-if="features.layoutOptions.displayMenuImages === '1'" class="menu-icon-div">
+                  <img ng-src="{{ feature.icon_url }}" class="menu-icon"/>
+                </div>
+                <div class="menu-text">
+                  <span class="{{ features.layoutOptions.title+' '+features.layoutOptions.textTransform }}">{{ feature.name }}</span>
+                  <div ng-if="feature.code == 'push_notification' && push_badge" class="badge-custom">{{ push_badge }}</div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="footer-wrapper">
+          <span class="footer-title" style="color: {{ features.layoutOptions.footerColor }} !important;">{{ features.layoutOptions.footerText }}</span>
+          <span style="color: {{ features.layoutOptions.footerColor }} !important;">{{ features.layoutOptions.footerSubText }}</span>
+        </div>
+      </div>
+      <div ng-if="has_loggin_features">
+        <ul class="app-menu">
+          <li ng-repeat="feature in loggin_features.overview.options" class=" menu-item border-custom" tabbar-items option="feature" id="feature-{{ $index }}" go-to-url="goTo(feature)">
+            <ul class="cel-flex-container">
+              <li class="cel-flex-item">
+                <div ng-if="features.layoutOptions.displayMenuImages === '1'" class="menu-icon-div">
+                  <img ng-src="{{ feature.icon_url }}" class="menu-icon"/>
+                </div>
+                <div class="menu-text">
+                  <span class="{{ features.layoutOptions.title+' '+features.layoutOptions.textTransform }}">{{ feature.name }}</span>
+                  <div ng-if="feature.code == 'push_notification' && push_badge" class="badge-custom">{{ push_badge }}</div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="footer-wrapper" style="color: {{ features.layoutOptions.footerColor }};">
+          <span class="footer-title" style="color: {{ features.layoutOptions.footerColor }} !important;">{{ features.layoutOptions.footerText }}</span>
+          <span style="color: {{ features.layoutOptions.footerColor }} !important;">{{ features.layoutOptions.footerSubText }}</span>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</div>

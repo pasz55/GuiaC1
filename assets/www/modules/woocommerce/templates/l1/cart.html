@@ -1,0 +1,72 @@
+<ion-view>
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+    <ion-nav-buttons side="secondary">
+        <button class="button button-custom button-icon icon" ng-click="goTo('home')">
+            <i class="icon ion-ios-home"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content sb-background-image>
+        <div class="list">
+            <div class="item item-custom item-thumbnail-left" ng-repeat="product in cart.products track by $index">
+                <img ng-src="{{product.images[0].src}}" />
+                <h2>{{ product.name }}</h2>
+                <div ng-if="product.selected_variation">
+                    <p ng-repeat="option in product.variations" ng-if="option.id == product.selected_variation">
+                        {{ "Variation:" | translate }}
+                        <span>{{ option.attributes[0].option }}</span>
+                    </p>
+                </div>
+                <p>
+                    <i class="icon ion-pricetag"></i>
+                    <span ng-bind-html="product.price_html"></span>
+                </p>
+                <p>
+                    <label class="item item-custom item-input">
+                        <span class="input-label">{{ "Quantity:" | translate }}</span>
+                        <input class='text-right' name="quantity" type="number" min="1" max="{{product.stock_quantity}}" ng-model='product.quantity_in_cart' required ng-change="changeQty()">
+                    </label>
+                </p>
+                <i class="icon ion-close pull-right" ng-click="removeCartItem(product.id)"></i>
+            </div>
+            <div ng-show="cart.products.length">
+                <div class="item item-custom item-divider">
+                    {{ "Cart total" | translate }}
+                    <span class="pull-right total">{{ cart_total }}</span>
+                </div>
+                <div class="item item-custom item-divider item-text-wrap">
+                    {{ "In order to proceed, please fill your Woocommerce customer email below:" | translate }}
+                </div>
+                <div class="item item-custom item-input">
+                    <span class="input-label">{{ "Email:" | translate }}</span>
+                    <input ng-model="customer.mail" type="text" ng-change="changeEmail()">
+                </div>
+                <button class="button button-block button-custom" ng-click="proceedCart()" ng-disabled="!customer.mail || paymentStep">
+                    {{ "Proceed" | translate }}
+                </button>
+            </div>
+            <div ng-show="paymentStep">
+                <div class="item item-custom item-text-wrap item-icon-left">
+                    <i class="icon ion-person"></i>
+                    {{ "Hey" | translate }} {{ customer_name }}! {{ "Your order have been created successfully, please choose a payment method below:" | translate }}
+                </div>
+                <button class="button button-block button-custom icon-left ion-android-open" ng-click="payOnline()">
+                    {{ "Pay on our online store" | translate }}
+                </button>
+                <button class="button button-block button-custom icon-left ion-card" ng-click="payStripe()" ng-show="stripe_enabled">
+                    {{ "Pay by Credit Card" | translate }}
+                </button>
+                <button class="button button-block button-custom icon-left ion-social-usd" ng-click="payPaypal()" ng-show="paypal_enabled">
+                    {{ "Pay by Paypal" | translate }}
+                </button>
+            </div>
+            <div class="item item-custom" ng-show="!cart.products.length">
+                {{ "Your cart is empty." | translate }}
+            </div>
+        </div>
+    </ion-content>
+    <style>
+        .total{
+            font-weight: bold;
+        }
+    </style>
+</ion-view>

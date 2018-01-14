@@ -1,0 +1,115 @@
+.layout_khayal {
+  background: #fff;
+  margin: 0 0 1em 0;
+  height: auto;
+  text-align: center;
+  padding: 1.5em 0;
+  position: relative;
+  margin: 3em 0 4em 0;
+  height: 60px;
+  text-align: right;
+  padding: 0;
+}
+
+.layout_khayal .khayalstrip {
+  position: absolute;
+  width: 100%;
+}
+
+.layout_khayal .khayalstrip span {
+  display: block;
+  float: right;
+  width: 16.666%;
+  height: 5px;
+  opacity: 0.5;
+}
+
+.layout_khayal .khayalstrip span:nth-child(1) {
+  background: #a78ea4;
+}
+
+.layout_khayal .khayalstrip span:nth-child(2) {
+  background: #f5d23a;
+}
+
+.layout_khayal .khayalstrip span:nth-child(3) {
+  background: #b1cc3f;
+}
+
+.layout_khayal .khayalstrip span:nth-child(4) {
+  background: #d66d7b;
+}
+
+.layout_khayal .khayalstrip span:nth-child(5) {
+  background: #3fa3cc;
+}
+
+.layout_khayal .khayalstrip span:nth-child(6) {
+  background: #b1cc3f;
+}
+
+.layout_khayal .khayalstrip .khayaltop {
+  top: 0;
+}
+
+.layout_khayal .khayalstrip.khayalbottom {
+  bottom: 0;
+}
+
+.layout_khayal .khayalicon {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-box-shadow: 0 0 0 4px #b1cc3f;
+  -moz-box-shadow: 0 0 0 4px #b1cc3f;
+  box-shadow: 0 0 0 4px #b1cc3f;
+  z-index: 100;
+  top: -18px;
+}
+
+.layout_khayal .khayaliconright {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  right: 0%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-box-shadow: 0 0 0 4px #b1cc3f;
+  -moz-box-shadow: 0 0 0 4px #b1cc3f;
+  box-shadow: 0 0 0 4px #b1cc3f;
+  z-index: 100;
+  top: -18px;
+}
+
+.layout_khayal .khayalright-content {
+  float: right;
+  margin-top: 20px;
+}
+
+.layout_khayal .khayalright-content p {
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+.layout_khayal .khayalleft-content {
+  float: left;
+  margin-top: 20px;
+}
+
+.layout_khayal .khayalleft-content p {
+  font-size: 18px;
+  margin-left: 4px;
+}

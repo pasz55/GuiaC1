@@ -1,0 +1,41 @@
+<ion-view class="view_appointment">
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+        <ion-nav-buttons side="secondary">
+            <button class="button button-clear header-item" ng-click="notification()">
+                <i class="ion-android-notifications-none"></i>
+            </button>
+        </ion-nav-buttons>
+        <div>
+            <ion-content sb-background-image class="appointment">
+                <div class="loader" ng-show="is_loading">
+                    <ion-spinner class="spinner-custom"></ion-spinner>
+                </div>
+
+                <div class="list" ng-show="appointmentlist.length">
+
+                    <div class="item item-divider item-divider-custom" ng-if="!appointmentlist.length">
+                        <h2 class="padding">{{ booking_zero }}</h2>
+                    </div>
+
+                    <div ng-class="{ 'card': settings.design_style == 'card' }" ng-repeat="booking in appointmentlist">
+
+                        <div class="item item-custom item-thumbnail-custom booking">
+                            <img ng-src="{{ settings.booking_image }}">
+                            <span class="booking-date">{{booking.aptDate}} @ {{booking.startTime}}</span>
+                            <p class="booking-service">{{booking.serviceName}} {{"with" | translate}} {{booking.providerName}}</p>
+                            <p class="booking-location">{{booking.location}}</p>
+                        </div>
+
+                        <div class="booking-state">
+                            <span class="list-inline active" ng-if="booking.status == 1">{{ "Active" | translate }}</span>
+                            <span class="list-inline completed" ng-if="booking.status == 2">{{ "Completed" | translate }}</span>
+                            <span class="list-inline cancelled" ng-if="booking.status == 3 || booking.status == 4">{{ "Cancelled" | translate }}</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </ion-content>
+        </div>
+</ion-view>

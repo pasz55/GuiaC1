@@ -1,0 +1,78 @@
+<ion-view class="view-donation">
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+    <ion-nav-buttons side="secondary">
+        <button ng-click="donation-view({ value_id: value_id })" class="button button-clear header-item"></button>
+    </ion-nav-buttons>
+
+    <ion-content sb-background-image>
+
+        <form novalidate name="form" ng-submit="stripeCallBack()">
+            <ion-list class="form-group">
+                <ion-item class="item item-custom">
+                    <ion-label floating ng-class="{ 'has-error': form.ccName.$error.required && form.ccName.$dirty }">
+                        {{ "Your name :" | translate }}
+                    </ion-label>
+                    <input type="text" name="ccName" ng-model="card.name" placeholder="{{ 'Lastname Firstname' | translate }}"
+                           value="{{ card.name }}" ng-minlength="4" required/>
+                </ion-item>
+
+                <ion-item class="item item-custom">
+                    <ion-label floating ng-class="{ 'has-error': form.ccNumber.$invalid && form.ccNumber.$dirty}">
+                        {{ "Card Number :" | translate }}
+                    </ion-label>
+                    <card-number-input class="form-control" placeholder="xxxx-xxxx-xxxx-xxxx"
+                                       payments-validate="card" name="ccNumber" ng-model="cardNumber"
+                                       card-type="cardType"
+                                       ng-class="{ 'has-error': form.ccNumber.$invalid && form.ccNumber.$dirty}"></card-number-input>
+                    <input ng-model="card.number" placeholder="Card Number" value="{{ card.number = cardNumber }}"
+                           type="hidden"/>
+                </ion-item>
+
+                <ion-item class="item item-custom">
+                    <ion-label floating ng-class="{ 'has-error': form.ccExpiry.$invalid && form.ccExpiry.$dirty}">
+                        {{ "Expiration Date :" | translate }}
+                    </ion-label>
+
+                    <card-expiry-input class="form-control" placeholder="MM / YYYY" name="ccExpiry"
+                                       ng-model="cardExpiry"
+                                       ng-class="{ 'has-error': form.ccExpiry.$invalid && form.ccExpiry.$dirty}"></card-expiry-input>
+                    <input ng-model="card.exp_year" placeholder="Expiration"
+                           value="{{ card.exp_year = cardExpiry.year }}" type="hidden"/>
+                    <input ng-model="card.exp_month" placeholder="Expiration"
+                           value="{{ card.exp_month = cardExpiry.month }}" type="hidden"/>
+                </ion-item>
+
+                <ion-item class="item item-custom">
+                    <ion-label floating ng-class="{ 'has-error': form.ccCvc.$invalid && form.ccCvc.$dirty}">
+                        {{ "CVC number :" | translate }}
+                    </ion-label>
+                    <card-cvc-input placeholder="xxx" class="form-control" ng-model="cardCvc"
+                                    name="ccCvc"
+                                    ng-class="{ 'has-error': form.ccCvc.$invalid && form.ccCvc.$dirty}"></card-cvc-input>
+
+                    <input ng-model="card.cvc" placeholder="CVC" value="{{ card.cvc = cardCvc }}" type="hidden"/>
+                </ion-item>
+
+                <ion-item ng-show="!validForm" class="item item-custom">
+                    <div><span class="angular-with-newlines message-error">{{ errorMessageForm }}</span></div>
+                </ion-item>
+
+                <div ng-if="is_loading" style="text-align: center;">
+                    <br />
+                    <ion-spinner></ion-spinner>
+                </div>
+
+                <div ng-if="!is_loading" style="text-align: center;">
+                    <ion-item class="item item-custom">
+                        <button class="button button-block button-custom"
+                                ng-click="stripeCallback(!form.ccNumber.$invalid && !form.ccExpiry.$invalid && !form.ccCvc.$invalid && !form.ccName.$error.required)"
+                                type="submit">{{ "Donate" | translate }} {{ amount_to_donate }} {{ currency }}
+                        </button>
+                    </ion-item>
+                </div>
+
+            </ion-list>
+        </form>
+
+    </ion-content>
+</ion-view>

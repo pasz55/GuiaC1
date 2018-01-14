@@ -1,0 +1,79 @@
+<ion-modal-view sb-page-background class="taxiride custom-fields-modal homepage-custom" ng-controller="TaxiRideCustomFieldsModalController">
+    <ion-header-bar class="bar-custom">
+        <div class="buttons">
+            <button class="button button-clear" ng-click="close()">{{ no_escape ? "Cancel" : "Close" | translate }}</button>
+        </div>
+        <h1 class="title">{{ 'Settings' | translate }}</h1>
+    </ion-header-bar>
+    <ion-content>
+        <form method="post" name="customFieldsForm" ng-submit="save()" novalidate>
+            <div class="list">
+                <div class="item item-text-wrap homepage-custom text-center" ng-if="no_escape">
+                    <p>
+                        {{"We need some informations before going any further..." | translate}}
+                    </p>
+                </div>
+                <div ng-repeat="cf in custom_fields">
+                    <label class="item item-input item-custom" ng-if="cf.type != 'vehicule_type' && cf.type != 'select_country' && cf.type != 'select_state'">
+                        <div class="input-label">
+                            {{ cf.label | translate }}
+                        </div>
+                        <input class="text-right" type="{{cf.type}}" placeholder="{{ cf.label }}" ng-model="custom_fields_data[cf.key]" ng-required="cf.required" ng-if="type != 'vehicule_type'" />
+                    </label>
+                    <div ng-if="cf.type == 'vehicule_type'">
+                        <div class="item item-divider item-divider-custom item-text-wrap">
+                            <p class="label">{{ cf.label }}</p>
+                        </div>
+                        <ion-radio name="vehicule_type" class="radio-custom item-text-wrap item item-thumbnail-left item-text-wrap" ng-repeat="vt in vehicule_types" ng-model="custom_fields_data[cf.key]" ng-value="vt.id"><img ng-src="{{vt.picture}}" width="32" height="32">{{ vt.name }}</ion-radio>
+                    </div>
+                    <div ng-if="cf.type == 'select_country'">
+                        <label class = "item item-input item-select item-custom">
+                            <div class = "input-label">
+                                {{ cf.label }}
+                            </div>
+                            <select ng-model="custom_fields_data[cf.key]" ng-change="switchCountry()" ng-options="country_code as country_label for (country_code,country_label) in countries_list">
+                            </select>
+                        </label>
+                    </div>
+                    <div ng-if="cf.type == 'select_state'">
+                        <label class = "item item-input item-select item-custom">
+                            <div class = "input-label">
+                                {{ cf.label }} {{ customer_fields_data['country'] }}
+                            </div>
+                            <select ng-model="custom_fields_data[cf.key]" ng-options="state_code as state_label for (state_code,state_label) in shown_states">
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="button button-block button-custom activated" ng-show="!is_loading">{{ "Send" | translate }}</button>
+                <div class="loader" ng-show="is_loading">
+                    <ion-spinner class="spinner-custom"></ion-spinner>
+                </div>
+            </div>
+        </form>
+    </ion-content>
+
+    <style type="text/css">
+
+        .taxiride.custom-fields-modal .item-thumbnail-left,
+        .taxiride.custom-fields-modal .item-thumbnail-left .item-content {
+            min-height: 52px;
+        }
+
+        .taxiride.custom-fields-modal .item-thumbnail-left .item-content {
+            padding-left: 56px;
+            padding-top: 16px;
+        }
+
+        .taxiride.custom-fields-modal .item-thumbnail-left .radio-icon {
+            line-height: 25px;
+        }
+
+        .taxiride.custom-fields-modal .item-thumbnail-left img {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+
+
+</ion-modal-view>

@@ -1,0 +1,38 @@
+<ion-view>
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+    <ion-content sb-background-image>
+        <div class="list">
+            <div class="item item-custom item-divider item-icon-left item-text-wrap">
+                <i class="icon ion-card"></i>
+                {{ "Please fill in your information in order to pay by credit card" | translate }}
+            </div>
+            <label class="item item-custom item-input">
+                <div class="input-label">
+                    {{ "Code" | translate }}
+                </div>
+                <input ng-model="card.number" type="number" maxlength="16" ng-maxlength="16">
+            </label>
+            <label class="item item-custom item-input">
+                <div class="input-label">
+                    {{ "Exp Month" | translate }}
+                </div>
+                <input ng-model="card.exp_month" type="number" min="1" ng-min="1" ng-max="12" max="12" maxlength="2" ng-maxlength="2">
+            </label>
+            <label class="item item-custom item-input">
+                <div class="input-label">
+                    {{ "Exp Year" | translate }}
+                </div>
+                <input ng-model="card.exp_year" type="number"  maxlength="4" ng-maxlength="4">
+            </label>
+            <label class="item item-custom item-input">
+                <div class="input-label">
+                    {{ "CVC" | translate }}
+                </div>
+                <input ng-model="card.cvc" type="number">
+            </label>
+            <button class="button button-block button-custom" ng-click="proceed()">
+                {{ "Proceed" | translate }}
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

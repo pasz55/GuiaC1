@@ -1,0 +1,63 @@
+<ion-view>
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+    <ion-nav-buttons side="right">
+        <button class="button button-custom button-icon icon" ng-click="goTo('cart')">
+            <i class="icon ion-ios-cart"><span class="badge cart-badge">{{ cart_qty }}</span></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="secondary">
+        <button class="button button-custom button-icon icon" ng-click="goTo('home')">
+            <i class="icon ion-ios-home"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content sb-background-image>
+        <div class="list" ng-show="!is_loading">
+
+            <div class="row" ng-repeat="category in categories">
+                <!-- Parent -->
+                <div class="item col item-custom">
+                    <div class="h3 categ-title" ng-click="showCategory(category.id)"><i class="icon ion-ios-albums-outline"></i> {{category.name}}</div>
+                    <div class="item item-custom item-body" ng-if="category.image.src || category.description" ng-click="showCategory(category.id)">
+                        <img ng-show="category.image.src" class="full-image" ng-src="{{category.image.src}}" />
+                        <p class="text-justify" ng-show="category.description" ng-bind-html="category.description"></p>
+                    </div>
+                    <!-- Sub-categories -->
+                    <div ng-if="category.children.length > 0">
+                        <ul class="list">
+                            <li class="item item-custom" ng-repeat="c in category.children" ng-click="showCategory(c.id)">
+                                <div class="text-wrap">
+                                    <h2 class="text-center uppercase">{{c.name}}</h2>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item item-custom" ng-if="categories != null && !categories.length">
+                {{ "No categories for now" | translate }}
+            </div>
+            <div class="item item-custom" ng-if="categories == null">
+                {{ "Loading" | translate }}
+            </div>
+        </div>
+    </ion-content>
+    <style>
+        .text-justify{
+            text-align:justify
+        }
+        .row+.row {
+            margin-top: 5px;
+        }
+        .uppercase{
+            text-transform:uppercase;
+        }
+        .categ-title{
+            padding: 5px 0 0 5px;
+        }
+        .cart-badge{
+            background-color: #F44336;
+            color:#ffffff;
+        }
+    </style>
+</ion-view>

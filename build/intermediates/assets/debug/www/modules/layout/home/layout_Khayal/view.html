@@ -1,0 +1,76 @@
+<ion-content overflow-scroll=”true”>
+    <div class="layout_khayal" tabbar-items ng-repeat="feature in features.overview.options" option="feature" go-to-url="goTo(feature);">
+        <div class="khayalstrip khayaltop">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="container">
+            <div class="{{ features.layoutOptions.KhayalIconPosition }}" ng-style="{'background-image':'url('+feature.icon_url+')'}">
+            </div>
+
+            <section class="khayalleft-content">
+                <p>{{ feature.name }}</p>
+            </section>
+
+            <section class="khayalright-content">
+                <p ng-if="feature.subtitle">{{ feature.subtitle }}</p>
+            </section>
+        </div>
+
+        <div class="khayalstrip khayalbottom">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</ion-content>
+
+<style>
+.layout_khayal .khayalright-content p {
+	color: {{ features.layoutOptions.KhayalSubtitleColor }} !important;
+}
+
+.layout_khayal .khayalleft-content p {
+	color: {{ features.layoutOptions.KhayalTitleColor }} !important;
+}
+
+.layout_khayal .khayalstrip span:nth-child(1) {
+		background: {{ features.layoutOptions.KhayalStripA }} !important;
+}
+.layout_khayal .khayalstrip span:nth-child(2) {
+		background: {{ features.layoutOptions.KhayalStripB }} !important;
+}
+.layout_khayal .khayalstrip span:nth-child(3) {
+		background: {{ features.layoutOptions.KhayalStripC }} !important;
+}
+.layout_khayal .khayalstrip span:nth-child(4) {
+		background: {{ features.layoutOptions.KhayalStripD }} !important;
+}
+.layout_khayal .khayalstrip span:nth-child(5) {
+		background: {{ features.layoutOptions.KhayalStripE }} !important;
+}
+.layout_khayal .khayalstrip span:nth-child(6) {
+		background: {{ features.layoutOptions.KhayalStripF }} !important;
+}
+
+.layout_khayal {
+    background: {{ features.layoutOptions.KhayalTextAreaColor }} !important;
+}
+
+.layout_khayal .khayalicon {
+		box-shadow: 0 0 0 4px {{ features.layoutOptions.KhayalIconBorderColor }} !important;
+}
+
+.layout_khayal .khayaliconright {
+		box-shadow: 0 0 0 4px {{ features.layoutOptions.KhayalIconBorderColor }} !important;
+}
+
+</style>

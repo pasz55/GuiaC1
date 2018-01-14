@@ -1,0 +1,76 @@
+<ion-modal-view sb-page-background class="taxiride estimate-modal homepage-custom" ng-controller="TaxiRideEstimateRideModalController">
+    <ion-header-bar class="bar-custom">
+        <div class="buttons">
+            <button class="button button-clear" ng-click="close()">{{ no_escape ? "Cancel" : "Close" | translate }}</button>
+        </div>
+        <h1 class="title">{{ 'Request a Ride' | translate }}</h1>
+    </ion-header-bar>
+    <ion-content>
+
+        <div id="floating_infos" class="list" delegate-handle="modalContent">
+            <div ng-show="info.step_1">
+                <div class="item item-custom item-divider">
+                    {{ "Choose your vehicle type" | translate }}
+                </div>
+                <ion-radio ng-model="info.type_choice" ng-value="type.id" ng-repeat="type in vehicule_list" class="radio-custom item-text-wrap item item-thumbnail-left item-text-wrap">
+                    <img ng-src="{{type.picture}}" width="32" height="32" > {{ type.name }}
+                </ion-radio>
+                <div class="item item-custom item-text-wrap" ng-show="!vehicule_list.length">
+                    {{ "No vehicle type found." | translate }}
+                </div>
+                <button ng-show="vehicule_list.length" class="button button-custom button-full icon-right ion-chevron-right" ng-click="validateVehiculeType()">{{ "Confirm" | translate }}</button>
+            </div>
+            <div ng-show="info.step_2">
+                <div class="item item-custom item-divider">
+                    {{ "Ride estimation" | translate }}
+                </div>
+                <div class="item item-custom item-icon-left item-text-wrap">
+                    <i class="icon ion-map"></i>
+                    {{ ride.route.legs[0].distance.text }}
+                </div>
+                <div class="item item-custom item-icon-left item-text-wrap">
+                    <i class="icon ion-clock"></i>
+                    {{ ride.route.legs[0].duration.text }}
+                </div>
+                <div class="item item-custom item-icon-left item-text-wrap" ng-show="!no_driver_available">
+                    <i class="icon ion-pricetag"></i>
+                    {{ min_estimate | currency:currency_symbol:2 }} - {{ max_estimate | currency:currency_symbol:2 }}
+                </div>
+                <div ng-show="no_driver_available">
+                    <div class="item item-custom item-divider">
+                        {{ "No driver available" | translate }}
+                    </div>
+                    <div class="item item-custom item-icon-left item-text-wrap">
+                        <i class="icon ion-android-sad"></i>
+                        {{ "We are sorry, but no driver was found for your request." | translate }}
+                    </div>
+                </div>
+                <div ng-show="!no_driver_available">
+                    <div class="item item-custom item-divider">
+                        {{ "Choose your payment method" | translate }}
+                    </div>
+                    <ion-radio ng-model="info.payment_choice" class="radio-custom item-text-wrap item item-text-wrap" ng-value="'cash'" ng-show="available_methods == 'all' || available_methods=='cash'">
+                        <i class="icon ion-cash"></i>
+                        {{ "Cash" | translate }}
+                    </ion-radio>
+                    <ion-radio ng-model="info.payment_choice" class="radio-custom item-text-wrap item item-text-wrap" ng-value="'stripe'" ng-show="(available_methods == 'all' || available_methods=='stripe') && stripe_available">
+                        <i class="icon ion-card"></i>
+                        {{ "Card" | translate }}
+                    </ion-radio>
+                    <ion-radio ng-model="info.payment_choice" class="radio-custom item-text-wrap item item-text-wrap" ng-value="'2co'" ng-show="(available_methods == 'all' || available_methods=='2co') && tco_available">
+                        <i class="icon ion-card"></i>
+                        {{ "Card" | translate }}
+                    </ion-radio>
+                    <div class="button button-custom button-full icon-right ion-chevron-right" ng-click="validateRequest()">
+                        {{ "Let's go!" | translate }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="loader" ng-show="is_loading">
+                <ion-spinner class="spinner-custom"></ion-spinner>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>

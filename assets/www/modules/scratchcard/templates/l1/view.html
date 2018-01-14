@@ -1,0 +1,67 @@
+<ion-view class="scratch-card-view" sb-page-background>
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+    <ion-content>
+
+        <div class="loader" ng-show="is_loading">
+            <ion-spinner class="spinner-custom"></ion-spinner>
+        </div>
+
+        <div ng-show="!is_loading">
+
+            <div class="list" ng-if="!is_loading && !card.card_id">
+                <div class="item item-text-wrap item-custom">
+                    {{ "No cards for now." | translate }}
+                </div>
+            </div>
+
+            <div class="card" ng-if="collection.available_rewards.length || card.card_id">
+                <div ng-if="card.card_id">
+                    <div class="item item-text-wrap item-icon-left item-custom" ng-if="card.description">
+                        <i class="icon ion-information-circled"></i>
+                        <p ng-bind-html="card.description"></p>
+                    </div>
+
+                    <div class="item item-text-wrap item-icon-left item-custom" ng-click="login()" ng-if="!is_logged_in">
+                        <i class="icon ion-ios-person-outline"></i>
+                        {{ "Click here to log-in" | translate }}
+                    </div>
+
+                    <div class="item item-image" ng-if="!is_logged_in || card.is_locked">
+                        <img src="{{ image }}" ng-click="alertLogin()">
+                    </div>
+
+                    <div class="item item-image" ng-show="is_logged_in && !card.is_locked">
+                        <div sb-scratch ng-if="card" card="card" value-id="value_id" customer-id="customer_id" end-scratch="endScratch()" log="log(is_win, points_earned)"></div>
+                    </div>
+
+                    <div class="item item-text-wrap item-icon-left item-custom" ng-click="showTc()" ng-if="tc_id">
+                        <i class="icon ion-document-text"></i>
+                        {{ "Terms & Conditions" | translate }}
+                    </div>
+                </div>
+
+                <div ng-show="collection.available_rewards.length">
+
+                    <div class="card" ng-repeat="reward in collection.available_rewards">
+
+                        <div class="item item-divider item-divider-custom">
+                            {{ reward.name }}
+                        </div>
+                        <div class="item item-icon-left item-text-wrap item-custom">
+                            <i class="icon ion-ios-star"></i>
+                            {{ reward.description }}
+                        </div>
+                        <div class="item item-custom" ng-click="openPad(reward)">
+                            {{ "Use this coupon" | translate }}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <sb-pad ng-if="show_pad" card="card"></sb-pad>
+
+        </div>
+
+    </ion-content>
+</ion-view>

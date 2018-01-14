@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\11.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="4737d9835cf3ea9751f7d6647be60900062d1062">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-gass-11.0.2_bc5eecb50dd402582417a8c02d6193ec97ea01a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-v13\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="be09545b7e6ff322c7286d2e80bed3b75b76c529">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_ea2f98c6b616da7e0e8e3f5c610b344f2c5c4318.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\libs\cordova-generic-ad.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="aa29338532c9e11ac055bf6792d793aef30bc261">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\cordova-generic-ad_edf0704280c1c0557d739375b25f5bcf6ea67511.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\11.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="587840a157b50a6380d814a7a5a87b76118405e2">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-safetynet-11.0.2_0da3af5f206b4e9cef5294e2a1f03cb9db33d14f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.4.4\c5cd3347c0a86d0dcfbf3da593d8431d5a789d54\jackson-core-2.4.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="c5cd3347c0a86d0dcfbf3da593d8431d5a789d54">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\jackson-core-2.4.4_96921150cc3f20f039e93e8d5159ea83c54238fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\11.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="acd4f9fad8500386084346a88ca47e2b66e84ffd">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-clearcut-11.0.2_05772bd2f9c915ce77e3a3f7945d50078d241811.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-26.0.0-alpha1_421db2323a3cf57ceb1d7ade5cfddccf0c197877.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="a71be5f29a1c1e3fd3e84472742668f101a5b936">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-11.0.2_9b57fa40e2fb0c8d0a333f4dd702d23d03171361.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-26.0.0-alpha1_4a7528178e9144426b274ae3aa653f3b3126d2a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\io.realm\realm-annotations\2.1.0\5be7c05d0676046c91d1046de6320b5101c71d56\realm-annotations-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="5be7c05d0676046c91d1046de6320b5101c71d56">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\realm-annotations-2.1.0_137d6ec2abf38f08ef9b4e939133272276a8e33b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\io.realm\realm-android-library\2.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="ac9b51dad71382fd20b5dc96c9386e93df5292fc">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\io.realm-realm-android-library-2.1.0_a88fef9ac4ffbe07c24db5e782063155c499c3ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\support-annotations-26.0.0-alpha1_8b134adffc80f3fb436b1e82625a25c61de1c130.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.android.support-support-v4-26.0.0-alpha1_384dcc387d3139a4df10daddf72c4f7d063b52df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="86baa7d1051901fc1b8e7f596732f71f32175bde">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-11.0.2_0089a3a29e134d485154a3bfab7723738f829b30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.0.0\ddd99896e9569eaababbe81b35d80e1b91c4ad85\eventbus-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\eventbus-3.0.0_42878042f155781b4767d855dee260315cea3a23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\org.apache.cordova\CordovaLib\6.2.0\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="96d1a86aa8484de6f6a0384e3305ba3da026702d">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\CordovaLib-6.2.0-debug_97ebed73bede80b138edf9361d6cd573f5a28f7d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\11.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="5493a7c08b74d424d08a23c68334893cfd2d5ee3">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-11.0.2_6a60884c92320c09f2890f6284bffd9bacdd33a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\11.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="d3a27693b28b46af644df8ce765f4252b32c9e87">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-iid-11.0.2_22a766a3f0ce113f54a7798186a354165344582e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\11.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="424e509954db08079f78b20947e2cf120c045e48">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-gcm-11.0.2_e1cf571d81d92bd5623ac336124840ff65e631de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="ea0f6c95c45bdb476e5f3803a00548d1e67dd3dd">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\me.leolin-ShortcutBadger-1.1.14_074e40e5d3065aef3fc78b5c44dc78a31cf62912.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-26.0.0-alpha1_1326249a2081394eec00e1c869cf3fa2b95f3478.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-26.0.0-alpha1_69c362bbed8463c47ac93b3ab492c5890c8f2775.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="2a2d9cd43adbe7599a78f2293273a77881c1909a">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-11.0.2_d26287072e91d050a23eb3f5628bc7a3727d22e3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-v13\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="2bf893856577f5038c0b8007a43fda3b3c5beb23">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.android.support-support-v13-23.4.0_639feb473b0c4fa79ca9cdcb6b0754c7fc827470.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.4.4\e2ff13c3de2f5a2ab2449a3dace2b0d1c37bd8ee\jackson-databind-2.4.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="e2ff13c3de2f5a2ab2449a3dace2b0d1c37bd8ee">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\jackson-databind-2.4.4_b417bb90699b450b70bbc8f0984eb7b851032aa5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\11.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="f909161e9bac1dd36538a275f06cae462082316a">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-lite-11.0.2_9ee0c53d4af9694709fe1889eca8f720ba87489b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.4.0\d6a66c7a5f01cf500377bd669507a08cfeba882a\jackson-annotations-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="d6a66c7a5f01cf500377bd669507a08cfeba882a">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\jackson-annotations-2.4.0_8be6ff0e42bd1f524eaa1a60dc993d08dac51520.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.android.support-support-compat-26.0.0-alpha1_358f13607421c54de5dd96111a8b99dbcca97f6e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.getkeepsafe.relinker\relinker\1.2.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="b64dd5f01bc37de289f90fd59299b0c76d119611">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\com.getkeepsafe.relinker-relinker-1.2.2_0421e8da0cf37b1e68cdaaa781cb7b51492ae10b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\barcodescanner\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="7c37db119e266ef17f7c29ad7afe4dfdcecacc16">
+        <dex dex="C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\pre-dexed\debug\intermediates-exploded-aar-barcodescanner_80fd4ae08177700605412c750512b5aa5307236e.jar" />
+    </item>
+
+</items>

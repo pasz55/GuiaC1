@@ -1,0 +1,38 @@
+<ion-modal-view sb-page-background class="taxiride history-modal homepage-custom" ng-controller="TaxiRideHistoryModalController">
+    <ion-header-bar class="bar-custom">
+        <div class="buttons">
+            <button class="button button-clear" ng-click="close()">{{ no_escape ? "Cancel" : "Close" | translate }}</button>
+        </div>
+        <h1 class="title">{{ 'Request History' | translate }}</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <div ng-repeat="request in requests">
+                <div class="item item-custom item-text-wrap item-icon-left" ng-click="showDetails(request)">
+                    <i class="icon ion-android-car"></i>
+                    <p class="label">
+                        {{ request.date }}
+                        <span class="price-span">{{ request.price }}</span>
+                    </p>
+                </div>
+            </div>
+            <div class="item item-custom item-text-wrap" ng-if="!loading && !requests.length">
+                <p class="label">
+                    {{ "No request for now." | translate }}
+                </p>
+            </div>
+            <div class="loader" ng-show="is_loading">
+                <ion-spinner class="spinner-custom"></ion-spinner>
+            </div>
+        </div>
+    </ion-content>
+
+    <style type="text/css">
+        .price-span{
+            float: right;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+
+</ion-modal-view>

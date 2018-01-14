@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\launcher_icon.png",
+        "source": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\res\\drawable-mdpi\\launcher_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_action_next_item.png",
+        "source": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\res\\drawable-mdpi\\ic_action_next_item.png"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\push_icon.png",
+        "source": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\res\\drawable-mdpi\\push_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_icon.png",
+        "source": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\res\\drawable-mdpi\\ic_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\icon.png",
+        "source": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\res\\drawable-mdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_action_remove.png",
+        "source": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\res\\drawable-mdpi\\ic_action_remove.png"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_action_previous_item.png",
+        "source": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\res\\drawable-mdpi\\ic_action_previous_item.png"
+    }
+]

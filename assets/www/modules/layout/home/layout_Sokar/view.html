@@ -1,0 +1,31 @@
+<ion-content overflow-scroll=”true”>
+	<div class="layout layout_sokar">
+		<ul>
+
+			<li class="item homepage-custom translucent" tabbar-items ng-repeat="feature in features.overview.options" option="feature" go-to-url="goTo(feature);">
+				<div class="overlay">
+					<img ng-src="{{ feature.icon_url }}" />
+				</div>
+
+				<div class="textbg animated {{ features.layoutOptions.textAnimation }}">
+					<h2 class="{{ features.layoutOptions.textTransform }}">
+						{{ feature.name }}
+					</h2>
+          <p class="{{ features.layoutOptions.textTransform }}" ng-if="feature.subtitle">
+						{{ feature.subtitle }}
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</ion-content>
+
+<style>
+.layout.layout_sokar .textbg h2{
+color: {{ features.layoutOptions.titleTextColor }} !important;
+}
+
+.layout.layout_sokar .textbg p{
+color: {{ features.layoutOptions.subtitleTextColor }} !important;
+}
+</style>

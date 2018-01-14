@@ -1,0 +1,19 @@
+<ion-view>
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+    <ion-nav-buttons side="secondary">
+        <button class="button button-custom button-icon icon" ng-click="goTo('home')">
+            <i class="icon ion-ios-home"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content sb-background-image>
+        <div class="list">
+            <div class="item item-custom item-divider item-icon-left">
+                <i class="icon ion-sad-outline"></i>
+                {{ cancel_txt1 }}
+            </div>
+            <div class="item item-custom item-text-wrap">
+                {{ cancel_txt2 }}
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

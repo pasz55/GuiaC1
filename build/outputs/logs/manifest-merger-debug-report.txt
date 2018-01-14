@@ -1,0 +1,436 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:2:1-66:12
+	package
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:2:101-145
+		INJECTED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml
+		INJECTED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:2:75-100
+		INJECTED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml
+		INJECTED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml
+	android:hardwareAccelerated
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:2:11-45
+	android:versionCode
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:2:46-74
+		INJECTED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml
+		INJECTED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:2:146-204
+supports-screens
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:3:5-191
+	android:largeScreens
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:3:49-76
+	android:smallScreens
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:3:132-159
+	android:normalScreens
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:3:77-105
+	android:xlargeScreens
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:3:160-188
+	android:resizeable
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:3:106-131
+	android:anyDensity
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:3:23-48
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:4:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\11.0.2\AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-gcm:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\11.0.2\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\11.0.2\AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:4:22-64
+application
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:5:5-46:19
+MERGED from [:barcodescanner:] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\barcodescanner\AndroidManifest.xml:11:5-14:19
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\11.0.2\AndroidManifest.xml:23:5-26:19
+MERGED from [com.google.android.gms:play-services-clearcut:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\11.0.2\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gass:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\11.0.2\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\11.0.2\AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:support-v13:23.4.0] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-v13\23.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-gcm:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\11.0.2\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-iid:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\11.0.2\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.0.2\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.0.2\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.0.2\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:5:81-113
+	android:supportsRtl
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:5:114-140
+	android:hardwareAccelerated
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:5:18-52
+	android:icon
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:5:53-80
+	android:allowBackup
+		ADDED from [:barcodescanner:] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\barcodescanner\AndroidManifest.xml:12:9-35
+activity#com.adminapps.android5979983671dc8.MainActivity
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:6:9-11:20
+	android:label
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:6:97-134
+	android:launchMode
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:6:135-165
+	android:windowSoftInputMode
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:6:257-299
+	android:configChanges
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:6:19-96
+	android:theme
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:6:194-256
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:6:166-193
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:7:13-10:29
+	android:label
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:7:28-65
+action#android.intent.action.MAIN
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:8:17-69
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:8:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:9:17-77
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:9:27-74
+activity#com.google.android.gms.ads.AdActivity
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:12:9-233
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\11.0.2\AndroidManifest.xml:25:9-232
+	android:configChanges
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:12:19-128
+	android:theme
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:12:182-230
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:12:129-181
+activity#com.adobe.phonegap.push.PushHandlerActivity
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:13:9-168
+	android:exported
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:13:19-42
+	android:permission
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:13:102-165
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:13:43-101
+receiver#com.adobe.phonegap.push.BackgroundActionButtonHandler
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:14:9-90
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:14:19-87
+receiver#com.google.android.gms.gcm.GcmReceiver
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:15:9-20:20
+	android:exported
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:15:19-42
+	android:permission
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:15:97-157
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:15:43-96
+intent-filter#com.google.android.c2dm.intent.RECEIVE+guiac1_9991
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:16:13-19:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:17:17-81
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:17:25-78
+category#guiac1_9991
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:18:17-56
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:18:27-53
+service#com.adobe.phonegap.push.GCMIntentService
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:21:9-25:19
+	android:exported
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:21:18-42
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:21:43-98
+intent-filter#com.google.android.c2dm.intent.RECEIVE
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:22:13-24:29
+service#com.adobe.phonegap.push.PushInstanceIDListenerService
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:26:18-42
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:26:43-111
+intent-filter#com.google.android.gms.iid.InstanceID
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:27:13-29:29
+action#com.google.android.gms.iid.InstanceID
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:28:17-80
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:28:25-77
+service#com.adobe.phonegap.push.RegistrationIntentService
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:31:9-110
+	android:exported
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:31:18-42
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:31:43-107
+activity#com.google.zxing.client.android.CaptureActivity
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:32:9-311
+	android:clearTaskOnLaunch
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:32:19-51
+	android:exported
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:32:114-138
+	android:windowSoftInputMode
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:32:261-308
+	android:configChanges
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:32:52-113
+	android:theme
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:32:202-260
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:32:139-201
+activity#com.google.zxing.client.android.encode.EncodeActivity
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:33:9-112
+	android:label
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:33:19-40
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:33:41-109
+receiver#de.appplant.cordova.plugin.localnotification.TriggerReceiver
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:34:9-122
+	android:exported
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:34:19-43
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:34:44-119
+receiver#de.appplant.cordova.plugin.localnotification.ClearReceiver
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:35:9-120
+	android:exported
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:35:19-43
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:35:44-117
+activity#de.appplant.cordova.plugin.localnotification.ClickActivity
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:36:9-203
+	android:launchMode
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:36:44-79
+	android:exported
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:36:19-43
+	android:theme
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:36:154-200
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:36:80-153
+receiver#de.appplant.cordova.plugin.notification.TriggerReceiver
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:37:9-117
+	android:exported
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:37:19-43
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:37:44-114
+receiver#de.appplant.cordova.plugin.notification.ClearReceiver
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:38:9-115
+	android:exported
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:38:19-43
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:38:44-112
+receiver#de.appplant.cordova.plugin.localnotification.RestoreReceiver
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:39:9-43:20
+	android:exported
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:39:19-43
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:39:44-119
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:40:13-42:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:41:17-79
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:41:25-76
+activity#de.appplant.cordova.plugin.notification.ClickActivity
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:44:9-198
+	android:launchMode
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:44:44-79
+	android:exported
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:44:19-43
+	android:theme
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:44:149-195
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:44:80-148
+service#com.homerours.musiccontrols.MusicControlsNotificationKiller
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:45:9-95
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:45:18-92
+uses-sdk
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:47:5-74
+MERGED from [io.realm:realm-android-library:2.1.0] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\io.realm\realm-android-library\2.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.getkeepsafe.relinker\relinker\1.2.2\AndroidManifest.xml:7:5-43
+MERGED from [:barcodescanner:] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\barcodescanner\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-ads:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\11.0.2\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\11.0.2\AndroidManifest.xml:22:5-43
+MERGED from [com.google.android.gms:play-services-clearcut:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\11.0.2\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-gass:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\11.0.2\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\11.0.2\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v13:23.4.0] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-v13\23.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\11.0.2\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\11.0.2\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.0.2\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.0.2\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.0.2\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\AndroidManifest.xml:21:5-23:58
+MERGED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:7:5-9:41
+MERGED from [org.apache.cordova:CordovaLib:6.2.0:debug] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\org.apache.cordova\CordovaLib\6.2.0\debug\AndroidManifest.xml:25:5-44
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:47:42-71
+	android:minSdkVersion
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:47:15-41
+		INJECTED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml
+		INJECTED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:48:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\11.0.2\AndroidManifest.xml:20:5-78
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:48:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:49:5-76
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:49:22-73
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:50:5-81
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:50:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:51:5-68
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:51:22-65
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:52:5-66
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:52:22-63
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:53:5-82
+MERGED from [com.google.android.gms:play-services-gcm:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\11.0.2\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\11.0.2\AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:53:22-79
+uses-permission#guiac1_9991.permission.C2D_MESSAGE
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:54:5-74
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:54:22-71
+uses-permission#guiac1_9991.permission.PushHandlerActivity
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:55:5-82
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:55:22-79
+permission#guiac1_9991.permission.C2D_MESSAGE
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:56:5-105
+	android:protectionLevel
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:56:67-102
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:56:17-66
+permission#guiac1_9991.permission.PushHandlerActivity
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:57:5-113
+	android:protectionLevel
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:57:75-110
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:57:17-74
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:58:5-65
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:58:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:59:5-69
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:59:22-66
+uses-feature#android.hardware.camera
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:60:5-84
+	android:required
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:60:58-81
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:60:19-57
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:61:5-81
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:61:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:62:5-79
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:62:22-76
+uses-feature#android.hardware.location.gps
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:63:5-91
+	android:required
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:63:64-88
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:63:19-63
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:64:5-81
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:64:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:65:5-80
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\guiac1_9991_android_source\AndroidManifest.xml:65:22-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.0.2\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.0.2\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.0.2\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.0.2\AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.0.2\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.0.2\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.0.2\AndroidManifest.xml:20:20-65
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\AndroidManifest.xml:26:9-47
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:27:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:39:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:42:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:45:5-82
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:45:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:46:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.14] C:\Users\Usuario\Desktop\guiac1_9991_android_source\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.14\AndroidManifest.xml:46:22-80

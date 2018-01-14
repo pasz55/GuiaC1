@@ -1,0 +1,21 @@
+<div class="layout layout_baguera_10" ng-controller="LayoutBaguera10Controller">
+	<div id="layout_baguera_10_Button" class="homepage-custom border-custom">
+		<i id="layout_baguera_10_menu_icon" class="icon ion-navicon-round"></i>
+		<i id="layout_baguera_10_menu_remove" style="display: none;" class="icon ion-close-round"></i>
+	</div>
+
+	<div id="layout_baguera_10_Nav">
+		<ul class="homepage-menu-flex-container">
+		<li class="homepage-menu-flex-item homepage-custom border-custom" tabbar-items ng-repeat="feature in features.overview.options" option="feature" go-to-url="goTo(feature);">
+			<ul class="cel-flex-container">
+				<li class="cel-flex-item">
+					<img ng-src="{{ feature.icon_url }}" class="homepage-menu-icon" />
+					<h2 class="layout_baguera_10_h2" id="{{ 'layout_baguera_10_feat-' + $index }}">{{ feature.name }}</h2>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+
+	<canvas class="layout_baguera_10_canvas"></canvas>
+</div>

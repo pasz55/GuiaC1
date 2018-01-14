@@ -1,0 +1,83 @@
+[
+    {
+        "outputFile": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en\\values-en.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 63,
+                    "endOffset": 114
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 171,
+                        "endColumn": 63,
+                        "endOffset": 230
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 119,
+                    "endColumn": 44,
+                    "endOffset": 159
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 56,
+                        "endOffset": 107
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 164,
+                    "endColumn": 74,
+                    "endOffset": 234
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 235,
+                        "endColumn": 74,
+                        "endOffset": 305
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 239,
+                    "endColumn": 58,
+                    "endOffset": 293
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 112,
+                        "endColumn": 58,
+                        "endOffset": 166
+                    }
+                }
+            }
+        ]
+    }
+]

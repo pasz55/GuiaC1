@@ -1,0 +1,50 @@
+<div class="layout layout_weappz_timeline">
+	<ion-scroll direction="y" scrollbar-y="false">
+		<ul class="timeline">
+			<li tabbar-items ng-repeat="feature in features.overview.options" option="feature" go-to-url="goTo(feature);">
+				<div class="direction-r">
+
+					<div class="timeline-wrapper">
+						<span class="hexa"></span>
+						<span class="timelinetitle">
+							{{ feature.name }}
+						</span>
+					</div>
+
+					<div class="timelinesubtitle" ng-if="feature.subtitle">
+						{{ feature.subtitle }}
+					</div>
+
+				</div>
+			</li>
+		</ul>
+	</ion-scroll>
+</div>
+
+<style type="text/css">
+	.layout.layout_weappz_timeline .timeline .hexa {
+		background-color: {{ features.layoutOptions.hexagonColor }} !important;
+	}
+
+	.layout.layout_weappz_timeline .timeline .hexa:before {
+		border-bottom-color: {{ features.layoutOptions.hexagonColor }} !important;
+	}
+
+	.layout.layout_weappz_timeline .timeline .hexa:after {
+		border-top-color: {{ features.layoutOptions.hexagonColor }} !important;
+	}
+
+	.layout.layout_weappz_timeline .timeline-wrapper .timelinetitle {
+		background-color: {{ features.layoutOptions.titleBackgroundColor }} !important;
+		color: {{ features.layoutOptions.titleTextColor }} !important;
+	}
+
+	.layout.layout_weappz_timeline .timeline-wrapper .timelinetitle:after {
+		border-bottom-color: {{ features.layoutOptions.titleBackgroundColor }} !important;
+	}
+
+	.layout.layout_weappz_timeline .timelinesubtitle {
+		background-color: {{ features.layoutOptions.subtitleBackgroundColor }} !important;
+		color: {{ features.layoutOptions.subtitleTextColor }} !important;
+	}
+</style>

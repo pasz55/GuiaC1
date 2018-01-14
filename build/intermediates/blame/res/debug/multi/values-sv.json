@@ -1,0 +1,2800 @@
+[
+    {
+        "outputFile": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sv\\values-sv.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 57,
+                    "endOffset": 158
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 203,
+                        "endColumn": 57,
+                        "endOffset": 256
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 163,
+                    "endColumn": 58,
+                    "endOffset": 217
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 261,
+                        "endColumn": 58,
+                        "endOffset": 315
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 222,
+                    "endColumn": 68,
+                    "endOffset": 286
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 320,
+                        "endColumn": 68,
+                        "endOffset": 384
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 291,
+                    "endColumn": 64,
+                    "endOffset": 351
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 389,
+                        "endColumn": 64,
+                        "endOffset": 449
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 356,
+                    "endColumn": 57,
+                    "endOffset": 409
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 454,
+                        "endColumn": 57,
+                        "endOffset": 507
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 414,
+                    "endColumn": 48,
+                    "endOffset": 458
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 512,
+                        "endColumn": 48,
+                        "endOffset": 556
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 463,
+                    "endColumn": 73,
+                    "endOffset": 532
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 561,
+                        "endColumn": 73,
+                        "endOffset": 630
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 537,
+                    "endColumn": 50,
+                    "endOffset": 583
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 635,
+                        "endColumn": 50,
+                        "endOffset": 681
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 588,
+                    "endColumn": 54,
+                    "endOffset": 638
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 686,
+                        "endColumn": 54,
+                        "endOffset": 736
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 643,
+                    "endColumn": 64,
+                    "endOffset": 703
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 741,
+                        "endColumn": 64,
+                        "endOffset": 801
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 708,
+                    "endColumn": 49,
+                    "endOffset": 753
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 806,
+                        "endColumn": 49,
+                        "endOffset": 851
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 758,
+                    "endColumn": 40,
+                    "endOffset": 794
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 856,
+                        "endColumn": 40,
+                        "endOffset": 892
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 799,
+                    "endColumn": 64,
+                    "endOffset": 859
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 897,
+                        "endColumn": 64,
+                        "endOffset": 957
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 864,
+                    "endColumn": 60,
+                    "endOffset": 920
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 962,
+                        "endColumn": 60,
+                        "endOffset": 1018
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 925,
+                    "endColumn": 67,
+                    "endOffset": 988
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1023,
+                        "endColumn": 67,
+                        "endOffset": 1086
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 993,
+                    "endColumn": 56,
+                    "endOffset": 1045
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1091,
+                        "endColumn": 56,
+                        "endOffset": 1143
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1050,
+                    "endColumn": 58,
+                    "endOffset": 1104
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1148,
+                        "endColumn": 58,
+                        "endOffset": 1202
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1109,
+                    "endColumn": 65,
+                    "endOffset": 1170
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1207,
+                        "endColumn": 65,
+                        "endOffset": 1268
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1175,
+                    "endColumn": 60,
+                    "endOffset": 1231
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1273,
+                        "endColumn": 60,
+                        "endOffset": 1329
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1236,
+                    "endColumn": 60,
+                    "endOffset": 1292
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1334,
+                        "endColumn": 60,
+                        "endOffset": 1390
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1297,
+                    "endColumn": 56,
+                    "endOffset": 1349
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1395,
+                        "endColumn": 56,
+                        "endOffset": 1447
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1354,
+                    "endColumn": 54,
+                    "endOffset": 1404
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1452,
+                        "endColumn": 54,
+                        "endOffset": 1502
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1409,
+                    "endColumn": 49,
+                    "endOffset": 1454
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1507,
+                        "endColumn": 49,
+                        "endOffset": 1552
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1459,
+                    "endColumn": 53,
+                    "endOffset": 1508
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1557,
+                        "endColumn": 53,
+                        "endOffset": 1606
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1513,
+                    "endColumn": 59,
+                    "endOffset": 1568
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1611,
+                        "endColumn": 59,
+                        "endOffset": 1666
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1573,
+                    "endColumn": 108,
+                    "endOffset": 1677
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 283,
+                        "endColumn": 104,
+                        "endOffset": 387
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1682,
+                    "endColumn": 188,
+                    "endOffset": 1866
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 388,
+                        "endColumn": 188,
+                        "endOffset": 576
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1871,
+                    "endColumn": 128,
+                    "endOffset": 1995
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 577,
+                        "endColumn": 124,
+                        "endOffset": 701
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2000,
+                    "endColumn": 111,
+                    "endOffset": 2107
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 702,
+                        "endColumn": 107,
+                        "endOffset": 809
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2112,
+                    "endColumn": 199,
+                    "endOffset": 2307
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 810,
+                        "endColumn": 199,
+                        "endOffset": 1009
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 2312,
+                    "endColumn": 126,
+                    "endOffset": 2434
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 1010,
+                        "endColumn": 122,
+                        "endOffset": 1132
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 2439,
+                    "endColumn": 132,
+                    "endOffset": 2567
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 0,
+                        "startOffset": 1133,
+                        "endColumn": 128,
+                        "endOffset": 1261
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2572,
+                    "endColumn": 206,
+                    "endOffset": 2774
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 285,
+                        "endColumn": 206,
+                        "endOffset": 491
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 2779,
+                    "endColumn": 206,
+                    "endOffset": 2981
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 1262,
+                        "endColumn": 206,
+                        "endOffset": 1468
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 2986,
+                    "endColumn": 109,
+                    "endOffset": 3091
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 1469,
+                        "endColumn": 105,
+                        "endOffset": 1574
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 3096,
+                    "endColumn": 192,
+                    "endOffset": 3284
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 1575,
+                        "endColumn": 192,
+                        "endOffset": 1767
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 3289,
+                    "endColumn": 129,
+                    "endOffset": 3414
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 0,
+                        "startOffset": 1768,
+                        "endColumn": 125,
+                        "endOffset": 1893
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 3419,
+                    "endColumn": 212,
+                    "endOffset": 3627
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 0,
+                        "startOffset": 1894,
+                        "endColumn": 212,
+                        "endOffset": 2106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 3632,
+                    "endColumn": 185,
+                    "endOffset": 3813
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 0,
+                        "startOffset": 2107,
+                        "endColumn": 181,
+                        "endOffset": 2288
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 3818,
+                    "endColumn": 95,
+                    "endOffset": 3909
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 0,
+                        "startOffset": 2289,
+                        "endColumn": 91,
+                        "endOffset": 2380
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 3914,
+                    "endColumn": 92,
+                    "endOffset": 4002
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 0,
+                        "startOffset": 2381,
+                        "endColumn": 88,
+                        "endOffset": 2469
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 4007,
+                    "endColumn": 107,
+                    "endOffset": 4110
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 0,
+                        "startOffset": 2470,
+                        "endColumn": 103,
+                        "endOffset": 2573
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 4115,
+                    "endColumn": 56,
+                    "endOffset": 4167
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1671,
+                        "endColumn": 56,
+                        "endOffset": 1723
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 4172,
+                    "endColumn": 55,
+                    "endOffset": 4223
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1728,
+                        "endColumn": 55,
+                        "endOffset": 1779
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 4228,
+                    "endColumn": 69,
+                    "endOffset": 4293
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1784,
+                        "endColumn": 69,
+                        "endOffset": 1849
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 4298,
+                    "endColumn": 56,
+                    "endOffset": 4350
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1854,
+                        "endColumn": 56,
+                        "endOffset": 1906
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 4355,
+                    "endColumn": 51,
+                    "endOffset": 4402
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 1911,
+                        "endColumn": 51,
+                        "endOffset": 1958
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 4407,
+                    "endColumn": 53,
+                    "endOffset": 4456
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1963,
+                        "endColumn": 53,
+                        "endOffset": 2012
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 4461,
+                    "endColumn": 64,
+                    "endOffset": 4521
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 2017,
+                        "endColumn": 64,
+                        "endOffset": 2077
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 4526,
+                    "endColumn": 61,
+                    "endOffset": 4583
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 2082,
+                        "endColumn": 61,
+                        "endOffset": 2139
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 4588,
+                    "endColumn": 79,
+                    "endOffset": 4663
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 2144,
+                        "endColumn": 79,
+                        "endOffset": 2219
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 4668,
+                    "endColumn": 45,
+                    "endOffset": 4709
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 2224,
+                        "endColumn": 45,
+                        "endOffset": 2265
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 4714,
+                    "endColumn": 93,
+                    "endOffset": 4803
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 2270,
+                        "endColumn": 93,
+                        "endOffset": 2359
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 4808,
+                    "endColumn": 56,
+                    "endOffset": 4860
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 2364,
+                        "endColumn": 56,
+                        "endOffset": 2416
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 4865,
+                    "endColumn": 50,
+                    "endOffset": 4911
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 2421,
+                        "endColumn": 50,
+                        "endOffset": 2467
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 4916,
+                    "endColumn": 60,
+                    "endOffset": 4972
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 2472,
+                        "endColumn": 60,
+                        "endOffset": 2528
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 4977,
+                    "endColumn": 58,
+                    "endOffset": 5031
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 2533,
+                        "endColumn": 58,
+                        "endOffset": 2587
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 5036,
+                    "endColumn": 43,
+                    "endOffset": 5075
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 2592,
+                        "endColumn": 43,
+                        "endOffset": 2631
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 5080,
+                    "endColumn": 49,
+                    "endOffset": 5125
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 2636,
+                        "endColumn": 49,
+                        "endOffset": 2681
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 5130,
+                    "endColumn": 55,
+                    "endOffset": 5181
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 2686,
+                        "endColumn": 55,
+                        "endOffset": 2737
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 5186,
+                    "endColumn": 43,
+                    "endOffset": 5225
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 2742,
+                        "endColumn": 43,
+                        "endOffset": 2781
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 5230,
+                    "endColumn": 97,
+                    "endOffset": 5323
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 4,
+                        "startOffset": 2786,
+                        "endColumn": 97,
+                        "endOffset": 2879
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 5328,
+                    "endColumn": 99,
+                    "endOffset": 5423
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 2884,
+                        "endColumn": 99,
+                        "endOffset": 2979
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 5428,
+                    "endColumn": 53,
+                    "endOffset": 5477
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 2984,
+                        "endColumn": 53,
+                        "endOffset": 3033
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 66,
+                    "startColumn": 4,
+                    "startOffset": 5482,
+                    "endColumn": 53,
+                    "endOffset": 5531
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 4,
+                        "startOffset": 3038,
+                        "endColumn": 53,
+                        "endOffset": 3087
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 5536,
+                    "endColumn": 55,
+                    "endOffset": 5587
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 4,
+                        "startOffset": 3092,
+                        "endColumn": 55,
+                        "endOffset": 3143
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 68,
+                    "startColumn": 4,
+                    "startOffset": 5592,
+                    "endColumn": 107,
+                    "endOffset": 5695
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 53,
+                        "startColumn": 4,
+                        "startOffset": 3148,
+                        "endColumn": 107,
+                        "endOffset": 3251
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 5700,
+                    "endColumn": 48,
+                    "endOffset": 5744
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 3256,
+                        "endColumn": 48,
+                        "endOffset": 3300
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 70,
+                    "startColumn": 4,
+                    "startOffset": 5749,
+                    "endColumn": 48,
+                    "endOffset": 5793
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 4,
+                        "startOffset": 3305,
+                        "endColumn": 48,
+                        "endOffset": 3349
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 71,
+                    "startColumn": 4,
+                    "startOffset": 5798,
+                    "endColumn": 125,
+                    "endOffset": 5919
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 56,
+                        "startColumn": 4,
+                        "startOffset": 3354,
+                        "endColumn": 125,
+                        "endOffset": 3475
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 72,
+                    "startColumn": 4,
+                    "startOffset": 5924,
+                    "endColumn": 41,
+                    "endOffset": 5961
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 4,
+                        "startOffset": 3480,
+                        "endColumn": 41,
+                        "endOffset": 3517
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 5966,
+                    "endColumn": 51,
+                    "endOffset": 6013
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 4,
+                        "startOffset": 3522,
+                        "endColumn": 51,
+                        "endOffset": 3569
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 74,
+                    "startColumn": 4,
+                    "startOffset": 6018,
+                    "endColumn": 53,
+                    "endOffset": 6067
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 59,
+                        "startColumn": 4,
+                        "startOffset": 3574,
+                        "endColumn": 53,
+                        "endOffset": 3623
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 6072,
+                    "endColumn": 139,
+                    "endOffset": 6207
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 4,
+                        "startOffset": 3628,
+                        "endColumn": 139,
+                        "endOffset": 3763
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 6212,
+                    "endColumn": 60,
+                    "endOffset": 6268
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 3768,
+                        "endColumn": 60,
+                        "endOffset": 3824
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 6273,
+                    "endColumn": 53,
+                    "endOffset": 6322
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 4,
+                        "startOffset": 3829,
+                        "endColumn": 53,
+                        "endOffset": 3878
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 78,
+                    "startColumn": 4,
+                    "startOffset": 6327,
+                    "endColumn": 92,
+                    "endOffset": 6415
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 3883,
+                        "endColumn": 92,
+                        "endOffset": 3971
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 79,
+                    "startColumn": 4,
+                    "startOffset": 6420,
+                    "endColumn": 83,
+                    "endOffset": 6499
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 64,
+                        "startColumn": 4,
+                        "startOffset": 3976,
+                        "endColumn": 83,
+                        "endOffset": 4055
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 80,
+                    "startColumn": 4,
+                    "startOffset": 6504,
+                    "endColumn": 70,
+                    "endOffset": 6570
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 4,
+                        "startOffset": 4060,
+                        "endColumn": 70,
+                        "endOffset": 4126
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 6575,
+                    "endColumn": 45,
+                    "endOffset": 6616
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 66,
+                        "startColumn": 4,
+                        "startOffset": 4131,
+                        "endColumn": 45,
+                        "endOffset": 4172
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 82,
+                    "startColumn": 4,
+                    "startOffset": 6621,
+                    "endColumn": 52,
+                    "endOffset": 6669
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 67,
+                        "startColumn": 4,
+                        "startOffset": 4177,
+                        "endColumn": 52,
+                        "endOffset": 4225
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 83,
+                    "startColumn": 4,
+                    "startOffset": 6674,
+                    "endColumn": 66,
+                    "endOffset": 6736
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 68,
+                        "startColumn": 4,
+                        "startOffset": 4230,
+                        "endColumn": 66,
+                        "endOffset": 4292
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 84,
+                    "startColumn": 4,
+                    "startOffset": 6741,
+                    "endColumn": 78,
+                    "endOffset": 6815
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 69,
+                        "startColumn": 4,
+                        "startOffset": 4297,
+                        "endColumn": 78,
+                        "endOffset": 4371
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 6820,
+                    "endColumn": 160,
+                    "endOffset": 6976
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 70,
+                        "startColumn": 4,
+                        "startOffset": 4376,
+                        "endColumn": 160,
+                        "endOffset": 4532
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 86,
+                    "startColumn": 4,
+                    "startOffset": 6981,
+                    "endColumn": 78,
+                    "endOffset": 7055
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 71,
+                        "startColumn": 4,
+                        "startOffset": 4537,
+                        "endColumn": 78,
+                        "endOffset": 4611
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 7060,
+                    "endColumn": 49,
+                    "endOffset": 7105
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 4,
+                        "startOffset": 4616,
+                        "endColumn": 49,
+                        "endOffset": 4661
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 7110,
+                    "endColumn": 82,
+                    "endOffset": 7188
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 4,
+                        "startOffset": 4666,
+                        "endColumn": 82,
+                        "endOffset": 4744
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 7193,
+                    "endColumn": 83,
+                    "endOffset": 7272
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 74,
+                        "startColumn": 4,
+                        "startOffset": 4749,
+                        "endColumn": 83,
+                        "endOffset": 4828
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 7277,
+                    "endColumn": 73,
+                    "endOffset": 7346
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 75,
+                        "startColumn": 4,
+                        "startOffset": 4833,
+                        "endColumn": 73,
+                        "endOffset": 4902
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 7351,
+                    "endColumn": 87,
+                    "endOffset": 7434
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 76,
+                        "startColumn": 4,
+                        "startOffset": 4907,
+                        "endColumn": 87,
+                        "endOffset": 4990
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 7439,
+                    "endColumn": 102,
+                    "endOffset": 7537
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 77,
+                        "startColumn": 4,
+                        "startOffset": 4995,
+                        "endColumn": 102,
+                        "endOffset": 5093
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 7542,
+                    "endColumn": 75,
+                    "endOffset": 7613
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 78,
+                        "startColumn": 4,
+                        "startOffset": 5098,
+                        "endColumn": 75,
+                        "endOffset": 5169
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 7618,
+                    "endColumn": 84,
+                    "endOffset": 7698
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 79,
+                        "startColumn": 4,
+                        "startOffset": 5174,
+                        "endColumn": 84,
+                        "endOffset": 5254
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 7703,
+                    "endColumn": 138,
+                    "endOffset": 7837
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 80,
+                        "startColumn": 4,
+                        "startOffset": 5259,
+                        "endColumn": 138,
+                        "endOffset": 5393
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 7842,
+                    "endColumn": 88,
+                    "endOffset": 7926
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 81,
+                        "startColumn": 4,
+                        "startOffset": 5398,
+                        "endColumn": 88,
+                        "endOffset": 5482
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 7931,
+                    "endColumn": 81,
+                    "endOffset": 8008
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 82,
+                        "startColumn": 4,
+                        "startOffset": 5487,
+                        "endColumn": 81,
+                        "endOffset": 5564
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 8013,
+                    "endColumn": 74,
+                    "endOffset": 8083
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 83,
+                        "startColumn": 4,
+                        "startOffset": 5569,
+                        "endColumn": 74,
+                        "endOffset": 5639
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 8088,
+                    "endColumn": 64,
+                    "endOffset": 8148
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 84,
+                        "startColumn": 4,
+                        "startOffset": 5644,
+                        "endColumn": 64,
+                        "endOffset": 5704
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 8153,
+                    "endColumn": 76,
+                    "endOffset": 8225
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 85,
+                        "startColumn": 4,
+                        "startOffset": 5709,
+                        "endColumn": 76,
+                        "endOffset": 5781
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 8230,
+                    "endColumn": 70,
+                    "endOffset": 8296
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 86,
+                        "startColumn": 4,
+                        "startOffset": 5786,
+                        "endColumn": 70,
+                        "endOffset": 5852
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 8301,
+                    "endColumn": 63,
+                    "endOffset": 8360
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 87,
+                        "startColumn": 4,
+                        "startOffset": 5857,
+                        "endColumn": 63,
+                        "endOffset": 5916
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 8365,
+                    "endColumn": 92,
+                    "endOffset": 8453
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 88,
+                        "startColumn": 4,
+                        "startOffset": 5921,
+                        "endColumn": 92,
+                        "endOffset": 6009
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 8458,
+                    "endColumn": 101,
+                    "endOffset": 8555
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 89,
+                        "startColumn": 4,
+                        "startOffset": 6014,
+                        "endColumn": 101,
+                        "endOffset": 6111
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 8560,
+                    "endColumn": 104,
+                    "endOffset": 8660
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 90,
+                        "startColumn": 4,
+                        "startOffset": 6116,
+                        "endColumn": 104,
+                        "endOffset": 6216
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 8665,
+                    "endColumn": 95,
+                    "endOffset": 8756
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 91,
+                        "startColumn": 4,
+                        "startOffset": 6221,
+                        "endColumn": 95,
+                        "endOffset": 6312
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 107,
+                    "startColumn": 4,
+                    "startOffset": 8761,
+                    "endColumn": 79,
+                    "endOffset": 8836
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 92,
+                        "startColumn": 4,
+                        "startOffset": 6317,
+                        "endColumn": 79,
+                        "endOffset": 6392
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 108,
+                    "startColumn": 4,
+                    "startOffset": 8841,
+                    "endColumn": 76,
+                    "endOffset": 8913
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 93,
+                        "startColumn": 4,
+                        "startOffset": 6397,
+                        "endColumn": 76,
+                        "endOffset": 6469
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 8918,
+                    "endColumn": 67,
+                    "endOffset": 8981
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 94,
+                        "startColumn": 4,
+                        "startOffset": 6474,
+                        "endColumn": 67,
+                        "endOffset": 6537
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 110,
+                    "startColumn": 4,
+                    "startOffset": 8986,
+                    "endColumn": 63,
+                    "endOffset": 9045
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 95,
+                        "startColumn": 4,
+                        "startOffset": 6542,
+                        "endColumn": 63,
+                        "endOffset": 6601
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 9050,
+                    "endColumn": 60,
+                    "endOffset": 9106
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 96,
+                        "startColumn": 4,
+                        "startOffset": 6606,
+                        "endColumn": 60,
+                        "endOffset": 6662
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 112,
+                    "startColumn": 4,
+                    "startOffset": 9111,
+                    "endColumn": 177,
+                    "endOffset": 9284
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 97,
+                        "startColumn": 4,
+                        "startOffset": 6667,
+                        "endColumn": 177,
+                        "endOffset": 6840
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 113,
+                    "startColumn": 4,
+                    "startOffset": 9289,
+                    "endColumn": 74,
+                    "endOffset": 9359
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 98,
+                        "startColumn": 4,
+                        "startOffset": 6845,
+                        "endColumn": 74,
+                        "endOffset": 6915
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 114,
+                    "startColumn": 4,
+                    "startOffset": 9364,
+                    "endColumn": 81,
+                    "endOffset": 9441
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 99,
+                        "startColumn": 4,
+                        "startOffset": 6920,
+                        "endColumn": 81,
+                        "endOffset": 6997
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 115,
+                    "startColumn": 4,
+                    "startOffset": 9446,
+                    "endColumn": 88,
+                    "endOffset": 9530
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 100,
+                        "startColumn": 4,
+                        "startOffset": 7002,
+                        "endColumn": 88,
+                        "endOffset": 7086
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 116,
+                    "startColumn": 4,
+                    "startOffset": 9535,
+                    "endColumn": 72,
+                    "endOffset": 9603
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 101,
+                        "startColumn": 4,
+                        "startOffset": 7091,
+                        "endColumn": 72,
+                        "endOffset": 7159
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 117,
+                    "startColumn": 4,
+                    "startOffset": 9608,
+                    "endColumn": 141,
+                    "endOffset": 9745
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 102,
+                        "startColumn": 4,
+                        "startOffset": 7164,
+                        "endColumn": 141,
+                        "endOffset": 7301
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 118,
+                    "startColumn": 4,
+                    "startOffset": 9750,
+                    "endColumn": 78,
+                    "endOffset": 9824
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 103,
+                        "startColumn": 4,
+                        "startOffset": 7306,
+                        "endColumn": 78,
+                        "endOffset": 7380
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 119,
+                    "startColumn": 4,
+                    "startOffset": 9829,
+                    "endColumn": 58,
+                    "endOffset": 9883
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 104,
+                        "startColumn": 4,
+                        "startOffset": 7385,
+                        "endColumn": 58,
+                        "endOffset": 7439
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 120,
+                    "startColumn": 4,
+                    "startOffset": 9888,
+                    "endColumn": 83,
+                    "endOffset": 9967
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 105,
+                        "startColumn": 4,
+                        "startOffset": 7444,
+                        "endColumn": 83,
+                        "endOffset": 7523
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 9972,
+                    "endColumn": 59,
+                    "endOffset": 10027
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 106,
+                        "startColumn": 4,
+                        "startOffset": 7528,
+                        "endColumn": 59,
+                        "endOffset": 7583
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 122,
+                    "startColumn": 4,
+                    "startOffset": 10032,
+                    "endColumn": 122,
+                    "endOffset": 10150
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 107,
+                        "startColumn": 4,
+                        "startOffset": 7588,
+                        "endColumn": 122,
+                        "endOffset": 7706
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 123,
+                    "startColumn": 4,
+                    "startOffset": 10155,
+                    "endColumn": 84,
+                    "endOffset": 10235
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 108,
+                        "startColumn": 4,
+                        "startOffset": 7711,
+                        "endColumn": 84,
+                        "endOffset": 7791
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 124,
+                    "startColumn": 4,
+                    "startOffset": 10240,
+                    "endColumn": 74,
+                    "endOffset": 10310
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 109,
+                        "startColumn": 4,
+                        "startOffset": 7796,
+                        "endColumn": 74,
+                        "endOffset": 7866
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 125,
+                    "startColumn": 4,
+                    "startOffset": 10315,
+                    "endColumn": 98,
+                    "endOffset": 10409
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 110,
+                        "startColumn": 4,
+                        "startOffset": 7871,
+                        "endColumn": 98,
+                        "endOffset": 7965
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 126,
+                    "startColumn": 4,
+                    "startOffset": 10414,
+                    "endColumn": 63,
+                    "endOffset": 10473
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 111,
+                        "startColumn": 4,
+                        "startOffset": 7970,
+                        "endColumn": 63,
+                        "endOffset": 8029
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 127,
+                    "startColumn": 4,
+                    "startOffset": 10478,
+                    "endColumn": 114,
+                    "endOffset": 10588
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 112,
+                        "startColumn": 4,
+                        "startOffset": 8034,
+                        "endColumn": 114,
+                        "endOffset": 8144
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 128,
+                    "startColumn": 4,
+                    "startOffset": 10593,
+                    "endColumn": 73,
+                    "endOffset": 10662
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 113,
+                        "startColumn": 4,
+                        "startOffset": 8149,
+                        "endColumn": 73,
+                        "endOffset": 8218
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 129,
+                    "startColumn": 4,
+                    "startOffset": 10667,
+                    "endColumn": 61,
+                    "endOffset": 10724
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 114,
+                        "startColumn": 4,
+                        "startOffset": 8223,
+                        "endColumn": 61,
+                        "endOffset": 8280
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 130,
+                    "startColumn": 4,
+                    "startOffset": 10729,
+                    "endColumn": 74,
+                    "endOffset": 10799
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 115,
+                        "startColumn": 4,
+                        "startOffset": 8285,
+                        "endColumn": 74,
+                        "endOffset": 8355
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 131,
+                    "startColumn": 4,
+                    "startOffset": 10804,
+                    "endColumn": 69,
+                    "endOffset": 10869
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 116,
+                        "startColumn": 4,
+                        "startOffset": 8360,
+                        "endColumn": 69,
+                        "endOffset": 8425
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 132,
+                    "startColumn": 4,
+                    "startOffset": 10874,
+                    "endColumn": 69,
+                    "endOffset": 10939
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 117,
+                        "startColumn": 4,
+                        "startOffset": 8430,
+                        "endColumn": 69,
+                        "endOffset": 8495
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 133,
+                    "startColumn": 4,
+                    "startOffset": 10944,
+                    "endColumn": 70,
+                    "endOffset": 11010
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 118,
+                        "startColumn": 4,
+                        "startOffset": 8500,
+                        "endColumn": 70,
+                        "endOffset": 8566
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 134,
+                    "startColumn": 4,
+                    "startOffset": 11015,
+                    "endColumn": 51,
+                    "endOffset": 11062
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 119,
+                        "startColumn": 4,
+                        "startOffset": 8571,
+                        "endColumn": 51,
+                        "endOffset": 8618
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 135,
+                    "startColumn": 4,
+                    "startOffset": 11067,
+                    "endColumn": 58,
+                    "endOffset": 11121
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 120,
+                        "startColumn": 4,
+                        "startOffset": 8623,
+                        "endColumn": 58,
+                        "endOffset": 8677
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 136,
+                    "startColumn": 4,
+                    "startOffset": 11126,
+                    "endColumn": 57,
+                    "endOffset": 11179
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 121,
+                        "startColumn": 4,
+                        "startOffset": 8682,
+                        "endColumn": 57,
+                        "endOffset": 8735
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 137,
+                    "startColumn": 4,
+                    "startOffset": 11184,
+                    "endColumn": 60,
+                    "endOffset": 11240
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 122,
+                        "startColumn": 4,
+                        "startOffset": 8740,
+                        "endColumn": 60,
+                        "endOffset": 8796
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 138,
+                    "startColumn": 4,
+                    "startOffset": 11245,
+                    "endColumn": 59,
+                    "endOffset": 11300
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 123,
+                        "startColumn": 4,
+                        "startOffset": 8801,
+                        "endColumn": 59,
+                        "endOffset": 8856
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 139,
+                    "startColumn": 4,
+                    "startOffset": 11305,
+                    "endColumn": 50,
+                    "endOffset": 11351
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 124,
+                        "startColumn": 4,
+                        "startOffset": 8861,
+                        "endColumn": 50,
+                        "endOffset": 8907
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 140,
+                    "startColumn": 4,
+                    "startOffset": 11356,
+                    "endColumn": 66,
+                    "endOffset": 11418
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 125,
+                        "startColumn": 4,
+                        "startOffset": 8912,
+                        "endColumn": 66,
+                        "endOffset": 8974
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 141,
+                    "startColumn": 4,
+                    "startOffset": 11423,
+                    "endColumn": 70,
+                    "endOffset": 11489
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 237,
+                        "endColumn": 66,
+                        "endOffset": 303
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 142,
+                    "startColumn": 4,
+                    "startOffset": 11494,
+                    "endColumn": 116,
+                    "endOffset": 11606
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 304,
+                        "endColumn": 112,
+                        "endOffset": 416
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 143,
+                    "startColumn": 4,
+                    "startOffset": 11611,
+                    "endColumn": 68,
+                    "endOffset": 11675
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 417,
+                        "endColumn": 64,
+                        "endOffset": 481
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 144,
+                    "startColumn": 4,
+                    "startOffset": 11680,
+                    "endColumn": 73,
+                    "endOffset": 11749
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 482,
+                        "endColumn": 69,
+                        "endOffset": 551
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 145,
+                    "startColumn": 4,
+                    "startOffset": 11754,
+                    "endColumn": 83,
+                    "endOffset": 11833
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 552,
+                        "endColumn": 79,
+                        "endOffset": 631
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 146,
+                    "startColumn": 4,
+                    "startOffset": 11838,
+                    "endColumn": 113,
+                    "endOffset": 11947
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\11.0.2\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 632,
+                        "endColumn": 109,
+                        "endOffset": 741
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 147,
+                    "startColumn": 4,
+                    "startOffset": 11952,
+                    "endColumn": 55,
+                    "endOffset": 12003
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 126,
+                        "startColumn": 4,
+                        "startOffset": 8979,
+                        "endColumn": 55,
+                        "endOffset": 9030
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 148,
+                    "startColumn": 4,
+                    "startOffset": 12008,
+                    "endColumn": 85,
+                    "endOffset": 12089
+                },
+                "from": {
+                    "file": "C:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\exploded-aar\\barcodescanner\\res\\values-sv\\values-sv.xml",
+                    "position": {
+                        "startLine": 127,
+                        "startColumn": 4,
+                        "startOffset": 9035,
+                        "endColumn": 85,
+                        "endOffset": 9116
+                    }
+                }
+            }
+        ]
+    }
+]

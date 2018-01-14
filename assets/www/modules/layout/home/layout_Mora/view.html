@@ -1,0 +1,30 @@
+	<div class="layout layout_mora animated {{ features.layoutOptions.textAnimation }}">
+
+			<div class="vertical-decoration"></div>
+
+			<div class="mora-left">
+					<div class="mora-logo">
+							<img ng-src="{{ features.layoutOptions.moralogo.replace('http', 'https') }}" alt="Logo"/>
+					</div>
+			</div>
+
+			<div class="mora-right">
+					<ul class="mora-menu">
+						<li tabbar-items ng-repeat="feature in features.overview.options" option="feature" go-to-url="goTo(feature);">
+							<img ng-src="{{ feature.icon_url }}" />
+							<a class="moratitle">{{ feature.name }}</a>
+						</li>
+					</ul>
+			</div>
+
+	</div>
+
+
+<style>
+.layout.layout_mora .moratitle{
+  color: {{ features.layoutOptions.titleTextColor }} !important;
+	text-transform: {{ features.layoutOptions.textTransform }} !important;
+	font-weight: {{ features.layoutOptions.fontweight }} !important;
+	letter-spacing: {{ features.layoutOptions.letterSpacing }}px !important;
+}
+</style>

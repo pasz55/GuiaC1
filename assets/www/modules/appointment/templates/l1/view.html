@@ -1,0 +1,61 @@
+<ion-view class="view_appointment">
+    <div>
+        <ion-content sb-background-image class="appointment">
+
+            <div class="loader" ng-show="is_loading">
+                <ion-spinner class="spinner-custom"></ion-spinner>
+            </div>
+
+            <!-- List style -->
+            <div class="list" ng-show="!is_loading" ng-if="!settings.design_style || settings.design_style == 'list'">
+
+                <div class="cover_image">
+                    <img ng-if="settings.cover_image" ng-src="{{ settings.cover_image }}" />
+                </div>
+
+                <div class="item item-custom" ng-click="gotoAppointment()">
+                    <div class="row">
+                        <div class="col col-90">
+                            {{ "View booked appointments" | translate }}
+                        </div>
+                        <div class="col col-10">
+                            <i class="item-note ion-chevron-right arrow-center"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item item-custom" ng-click="gotoBookAppointment()">
+                    <div class="row">
+                        <div class="col col-90">
+                            {{ "Book appointment" | translate }}
+                        </div>
+                        <div class="col col-10">
+                            <i class="item-note ion-chevron-right arrow-center"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /List style -->
+
+            <!-- Card style -->
+            <div ng-if="settings.design_style == 'card'">
+
+                <div class="card cover_image">
+                    <img ng-if="settings.cover_image" ng-src="{{ settings.cover_image }}" />
+                </div>
+
+                <div class="card">
+                    <button class="button button-block button-custom" ng-click="gotoAppointment()">
+                        {{ "View booked appointments" | translate }}
+                    </button>
+
+                    <button class="button button-block button-custom" ng-click="gotoBookAppointment()">
+                        {{ "Book appointment" | translate }}
+                    </button>
+                </div>
+            </div>
+            <!-- /Card style -->
+
+        </ion-content>
+    </div>
+</ion-view>

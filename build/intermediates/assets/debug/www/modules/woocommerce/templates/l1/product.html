@@ -1,0 +1,95 @@
+<ion-view>
+    <ion-nav-title>{{ product.name }}</ion-nav-title>
+    <ion-nav-buttons side="right">
+        <button class="button button-custom button-icon icon" ng-click="goTo('cart')">
+            <i class="icon ion-ios-cart"><span class="badge cart-badge">{{ cart_qty }}</span></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="secondary">
+        <button class="button button-custom button-icon icon" ng-click="goTo('home')">
+            <i class="icon ion-ios-home"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content sb-background-image>
+        <div class="list top" ng-if="product">
+            <div class="item item-custom item-divider">
+                <ion-scroll direction="x" paging="true" scrollbar-x="false" ng-if="product.images.length">
+                    <img ng-repeat="picture in product.images" ng-src="{{picture.src}}" class="full-image"/>
+                </ion-scroll>
+            </div>
+            <div class="item item-custom">
+                <sb-rating rating='product.average_rating' />
+            </div>
+            <div class="item item-custom item-divider item-text-wrap justify" ng-bind-html="product.description"></div>
+
+            <label class="item item-custom item-input">
+                <span class="input-label">{{ "Quantity:" | translate }}</span>
+                <form name="quantityForm" style="width:100%">
+                    <input class='text-right' name="quantity" type="number" min="1" max="{{product.stock_quantity}}" ng-model='quantity.value' required>
+                </form>
+            </label>
+            <label class="item item-custom" ng-if="product.stock_quantity">
+                <span>{{ "Stock Quantity:" | translate }} <b>{{product.stock_quantity}}</b></span>
+            </label>
+            <label class="item item-custom item-input item-select" ng-if="product.variations.length && product.variations[0].attributes[0].option != ''">
+                <div class="input-label">
+                    {{ "Variation:" | translate }}
+                </div>
+                <select name="variation_select" ng-change="changeOption()" ng-model="selected_option.id">
+                    <option ng-repeat="option in product.variations" value="{{ option.id }}">
+                        {{ option.attributes[0].option }}
+                    </option>
+                </select>
+            </label>
+            <div class="item item-custom item-divider">
+                <div class='row'>
+                    <div class="col text-left">
+                        <button class='button button-custom' ng-click="addToCart(product)" ng-if="product" ng-disabled="!product.in_stock || (product.stock_quantity && (product.stock_quantity < quantity.value)) || !quantityForm.quantity.$valid">
+                            <i class="icon ion-ios-cart" style='margin-right: 4px'> </i> <span ng-if="product.in_stock && quantityForm.quantity.$valid">{{ "Add To Cart" | translate }}</span><span ng-if="!product.in_stock">{{ "Out of stock" | translate }}</span><span ng-if="!quantityForm.quantity.$valid">{{ "Invalid Quantity" | translate }}</span>
+                        </button>
+                    </div>
+                    <div class="col text-right">
+                        <div style='vertical-align: middle; margin-top: 16px; margin-right: 8px'>
+                            <i class="icon ion-pricetag"></i>
+                            <span class='product-price' ng-bind-html="displayed_price"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list" ng-if="reviews">
+                <div class="card" ng-repeat="review in reviews" ng-if="reviews.length > 0">
+                    <div class="item item-custom">
+                        <h2>{{review.name}}</h2>
+                        <p><i class="icon ion-calendar"></i> {{review.date_created}}</p>
+                    </div>
+                    <div class="item item-custom item-body">
+                        <p>{{review.review}}</p>
+                        <p class="text-right">
+                            <sb-rating rating='review.rating' />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item-custom" ng-if="loading">
+            {{ "Loading" | translate }}
+        </div>
+        <div class="item item-custom" ng-if="product == null && !loading">
+            {{ "Sorry, product not found." | translate }}
+        </div>
+    </ion-content>
+    
+<style>
+    .justify{
+        text-align:justify;
+    }
+    .top{
+        border-top: 5px solid;
+    }
+    .cart-badge{
+        background-color: #F44336;
+        color:#ffffff;
+    }
+</style>
+
+</ion-view>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta http-equiv="Content-Security-Policy" content="
+            default-src * ws://* wss://* ;
+            script-src * 'unsafe-inline' 'unsafe-eval';
+            object-src *;
+            style-src * 'unsafe-inline';
+            img-src * data: android-webview-video-poster:;
+            media-src *;
+            frame-src * gap://ready ws://* wss://* ;
+            child-src * gap://ready ws://* wss://* ;
+            font-src * data:;
+            connect-src * ws://* wss://* ;">
+        <meta id="last_meta" name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+
+        <title></title>
+
+        <link href="./dist/app.bundle.min.css" rel="stylesheet" />
+
+        <script src="./dist/app.libs.min.js"></script>
+
+        <script src="./js/utils/languages.js"></script>
+        <script src="./js/utils/url.js"></script>
+        <script src="./cordova.js"></script>
+
+        <script src="./js/libraries/libraries.bundle.min.js"></script>
+
+        <script src="./js/app.min.js"></script>
+
+        <script src="./dist/templates.js"></script>
+        <script src="./js/utils/utils.bundle.min.js"></script>
+        <script src="./js/services/services.bundle.min.js"></script>
+        <script src="./js/directives/directives.bundle.min.js"></script>
+        <script src="./js/providers/providers.bundle.min.js"></script>
+
+        <!-- LazyLoaded features-->
+        <script src="./js/features/features.bundle.min.js"></script>
+        <!-- /LazyLoaded features-->
+
+        <script src="./js/factory/facebook.min.js"></script>
+        <script src="./js/factory/padlock.min.js"></script>
+        <script src="./js/factory/pages.min.js"></script>
+        <script src="./js/factory/tc.min.js"></script>
+        <script src="./js/factory/cms.min.js"></script>
+        <script src="./js/factory/push.min.js"></script>
+        <script src="./js/controllers/push.min.js"></script>
+        <script src="./js/factory/search.min.js"></script>
+        <script src="./js/controllers/customer.min.js"></script>
+        <script src="./js/factory/customer.min.js"></script>
+        <script src="./js/filters/filters.min.js"></script>
+
+	
+		<script src="modules/layout/home/layout_siberian_swipe/swiper/swiper.min.js"></script>
+	
+		<script src="modules/layout/home/layout_siberian_swipe/hooks.js"></script>
+	
+		<script src="modules/layout/home/layout_siberian_18/hooks.js"></script>
+	
+		<script src="modules/layout/home/layout_siberian_year/hooks.js"></script>
+	
+		<script src="modules/job/controllers/job.js"></script>
+	
+		<script src="modules/job/factories/job.js"></script>
+	
+		<script src="modules/surveys/controllers/surveys.js"></script>
+	
+		<script src="modules/surveys/factories/surveys.js"></script>
+	
+		<script src="modules/layout/home/layout_Elegant/hooks.js"></script>
+	
+		<script src="modules/layout/home/layout_Khayal/hooks.js"></script>
+	
+		<script src="modules/layout/home/layout_baguera_12/hooks.js"></script>
+	
+		<script src="modules/loginredirect/libraries/h5_lib.js"></script>
+	
+		<script src="modules/loginredirect/controllers/loginredirect.js"></script>
+	
+		<script src="modules/loginredirect/factory/loginredirect.js"></script>
+	
+		<script src="modules/taxi_ride/controllers/taxi_ride_2checkout.js"></script>
+	
+		<script src="modules/taxi_ride/controllers/taxi_ride_map.js"></script>
+	
+		<script src="modules/taxi_ride/controllers/taxi_ride_customfields_modal.js"></script>
+	
+		<script src="modules/taxi_ride/controllers/taxi_ride_paymentssettings_modal.js"></script>
+	
+		<script src="modules/taxi_ride/controllers/taxi_ride_history_modal.js"></script>
+	
+		<script src="modules/taxi_ride/controllers/taxi_ride_estimate_ride_modal.js"></script>
+	
+		<script src="modules/taxi_ride/controllers/taxi_ride_driver_waiting_modal.js"></script>
+	
+		<script src="modules/taxi_ride/factories/taxi_ride.js"></script>
+	
+		<script src="modules/socketio/libraries/socket.io.min.js"></script>
+	
+		<script src="modules/appointment/controllers/appointment.js"></script>
+	
+		<script src="modules/appointment/factories/appointment.js"></script>
+	
+		<script src="modules/quiz/controllers/quiz.js"></script>
+	
+		<script src="modules/quiz/factories/quiz.js"></script>
+	
+		<script src="modules/layout/home/layout_Mora/hooks.js"></script>
+	
+		<script src="modules/scratchcard/directives/sb-scratch.js"></script>
+	
+		<script src="modules/scratchcard/controllers/scratchcard.js"></script>
+	
+		<script src="modules/scratchcard/factory/scratchcard.js"></script>
+	
+		<script src="modules/layout/home/layout_baguera_10/hooks.js"></script>
+	
+		<script src="modules/layout/home/layout_cinema/hooks.js"></script>
+	
+		<script src="modules/chatrooms/controllers/chatrooms.js"></script>
+	
+		<script src="modules/chatrooms/factories/chatrooms.js"></script>
+	
+		<script src="modules/chatrooms/filters/emojify.js"></script>
+	
+		<script src="modules/chatrooms/libraries/base64.min.js"></script>
+	
+		<script src="modules/woocommerce/controllers/woocommerce.js"></script>
+	
+		<script src="modules/woocommerce/factory/woocommerce.js"></script>
+	
+		<script src="modules/woocommerce/directives/sb-products.js"></script>
+	
+		<script src="modules/woocommerce/directives/sb-rating.js"></script>
+	
+		<script src="modules/woocommerce/service/woocommerce.js"></script>
+	
+		<script src="modules/layout/home/weappz_timeline/hooks.js"></script>
+	
+		<script src="modules/games/controllers/games.js"></script>
+	
+		<script src="modules/games/factories/games.js"></script>
+	
+		<script src="modules/layout/home/layout_Slider/hooks.js"></script>
+	
+		<script src="modules/donation/bower_components/angular-payment/dist/angular-payment-tpls-0.3.0.js"></script>
+	
+		<script src="modules/donation/controllers/donation.js"></script>
+	
+		<script src="modules/donation/factories/donation.js"></script>
+	
+		<script src="modules/layout/home/layout_Sokar/hooks.js"></script>
+	
+		<link href="modules/layout/home/layout_siberian_swipe/swiper/swiper.min.css" rel="stylesheet">
+	
+		<link href="modules/layout/home/layout_siberian_swipe/style.css" rel="stylesheet">
+	
+		<link href="modules/layout/home/layout_siberian_18/style.css" rel="stylesheet">
+	
+		<link href="modules/layout/home/layout_siberian_year/style.css" rel="stylesheet">
+	
+		<link href="modules/job/css/styles.css" rel="stylesheet">
+	
+		<link href="modules/layout/home/layout_Elegant/style.css" rel="stylesheet">
+	
+		<link href="modules/layout/home/layout_Khayal/style.css" rel="stylesheet">
+	
+		<link href="modules/layout/home/layout_baguera_12/style.css" rel="stylesheet">
+	
+		<link href="modules/appointment/styles/appointment.css" rel="stylesheet">
+	
+		<link href="modules/layout/home/layout_Mora/style.css" rel="stylesheet">
+	
+		<link href="modules/scratchcard/css/scratchcard.css" rel="stylesheet">
+	
+		<link href="modules/layout/home/layout_baguera_10/style.css" rel="stylesheet">
+	
+		<link href="modules/layout/home/layout_cinema/style.css" rel="stylesheet">
+	
+		<link href="modules/chatrooms/stylesheets/chatrooms.css" rel="stylesheet">
+	
+		<link href="modules/layout/home/weappz_timeline/style.css" rel="stylesheet">
+	
+		<link href="modules/games/styles/games.css" rel="stylesheet">
+	
+		<link href="modules/layout/home/layout_Slider/style.css" rel="stylesheet">
+	
+		<link href="modules/donation/css/styles.css" rel="stylesheet">
+	
+		<link href="modules/layout/home/layout_Sokar/style.css" rel="stylesheet">
+	
+		<script src="./features/classifieds/classifieds.js" data-feature="classifieds"></script>
+	</head>
+    <body ng-app="starter" class="platform-browser platform-cordova platform-webview platform-android platform-cordova platform-webview">
+
+        <!-- Global layout handler -->
+        <sb-side-menu ng-if="app_is_loaded"></sb-side-menu>
+
+        <div class="ui-background-loader uil-squares-css" ng-hide="!ui_background_loader" ng-click="openLoaderProgress()"><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div>
+        <div class="ui-progress-view" ng-hide="!ui_progress_view">
+            <p>{{ "Downloading..." | translate }}</p>
+            <div class="ui-progress-view-circle"></div>
+            <p ng-click="backgroundLoaderProgress()">{{ "Tap to download in background" | translate }}</p>
+        </div>
+
+        <!-- NoScript javascript alert. -->
+        <noscript><div class="javascript-required"><div class="javascript-header">Application</div><div class="javascript-message"><h3>JavaScript Required</h3><p>We're sorry, but this application requires JavaScript in order to work properly, please enable it and reload this page.</p><a class="javascript-button" href="./index-prod.html">Reload</a><div class="javascript-clear"></div></div></div><style type="text/css">div.ui-background-loader {display: none;}div.javascript-required {top: 0;left: 0;position: absolute;width: 100%;height: 100%;color: #333333;background-color: #f8f8f8;}div.javascript-header {width: 100%;height: 40px;font-size: 22px;text-align: center;color: #333333;line-height: 39px;background-color: #0099c7;border-bottom: 1px solid #ffffff;color: white;box-shadow: 0px 1px 1px grey;font-weight: bold;}div.javascript-message {width: 80vw;max-width: 600px;margin: 0 auto;margin-top: 20vh;padding: 40px;border: 1px solid lightgrey;background-color: #f0f0f0;color: #333333;box-shadow: 1px 1px 1px grey;border-radius: 2px;}div.javascript-clear {clear: both;}a.javascript-button {padding: 8px;text-decoration: none;color: white;background-color: #0099c7;border: 1px solid #0088b6;border-radius: 2px;font-weight: 15px;  text-transform: uppercase;  margin-top: 20px;  float: right;  }</style></noscript>
+
+    </body>
+</html>

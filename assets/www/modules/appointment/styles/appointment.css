@@ -1,0 +1,413 @@
+.view_appointment .tabs-icon-top ion-tab {
+    display: none;
+}
+
+.view_appointment .tabs-icon-top .item.item-custom.tab-item {
+    opacity: 0.2;
+}
+
+.view_appointment .tabs-icon-top .tab-item-active {
+    font-weight: bold;
+    opacity: 1 !important;
+}
+
+.view_appointment ion-tabs .item.item-custom.tab-item {
+    padding: 2px 0 0 0;
+    border: 0;
+}
+
+.view_appointment .item-location .subtitle {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.view_appointment .item.item-custom {
+    padding: 5px;
+}
+
+.view_appointment .service .row {
+    padding: 0;
+}
+
+.view_appointment .service .row.price {
+    text-align: right;
+}
+
+.view_appointment .service-price {
+    padding-right: 10px;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.view_appointment .service span.duration {
+    float: left;
+    font-size: 14px;
+}
+
+.view_appointment .item.provider {
+    height: 76px;
+}
+
+.view_appointment .item-thumbnail-custom p,
+.view_appointment .item-thumbnail-custom span,
+.view_appointment .item-thumbnail-custom h2 {
+    padding-left: 63px;
+}
+
+.view_appointment .item-thumbnail-custom img {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    height: 60px;
+    border: 3px solid rgba(0,0,0,0.25);
+    border-radius: 3px;
+}
+
+.view_appointment #calendar {
+    position: relative;
+    overflow: hidden;
+    height: 314px;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.view_appointment table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition: all 0.3s ease;
+}
+
+.view_appointment table.active {
+    transform: translateX(0px);
+}
+
+.view_appointment table.inactive {
+    transition: all 0.3s 0.01s ease;
+}
+
+.view_appointment table.hide-left {
+    transform: translateX(-100vw);
+}
+
+.view_appointment table.hidden-right {
+    transform: translateX(100vw);
+}
+
+.view_appointment td,
+.view_appointment th {
+    text-align: center;
+    background-color: #fff;
+}
+
+.view_appointment th {
+    padding: 5px;
+}
+
+.view_appointment tr:first-child th {
+    font-size: 20px;
+    font-weight: bold;
+    border-left: none;
+    border-top: none;
+}
+
+.view_appointment td:last-child,
+.view_appointment th:last-child {
+    border-right: none;
+}
+
+.view_appointment th {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #4E4E4E;
+    color: #fff;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+    font-weight: normal;
+}
+
+.view_appointment th .any {
+    font-size: 12px;
+    font-weight: normal;
+    display: block;
+    text-shadow: none;
+}
+
+.view_appointment tr:nth-child(2) th {
+    padding: 5px;
+}
+
+.view_appointment td {
+    padding: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.view_appointment tr>td{
+    background-color: #E5E5E5;
+}
+
+.view_appointment td>span {
+    color: #555;
+    padding: 10px;
+    display: block;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+    width: 80%;
+}
+
+.view_appointment td:nth-child(even)>span {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.view_appointment #calendar td {
+    padding: 8px !important;
+}
+
+.view_appointment td.today {
+    font-weight: bold;
+    background-color: #BFBFBF;
+    color: #fff;
+}
+
+.view_appointment td.fora > span {
+    opacity: 0.2;
+}
+
+.view_appointment td > span:hover {
+    background: #a57cb6;
+    color: #fff;
+}
+
+.view_appointment .boto-next{
+    right: 5px !important;
+}
+.view_appointment .boto-prev{
+    left: 5px !important;
+}
+.view_appointment .boto-next,
+.view_appointment .boto-prev {
+    color: transparent;
+    background: transparent;
+    border: 0;
+    width: 34px !important;
+    height: 34px !important;
+    position: absolute !important;
+    float: left;
+    top: 5px !important;
+}
+
+
+.view_appointment .boto-next:after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 12px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 4px 4px 0 0;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.view_appointment .boto-prev:after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 12px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 0 4px 4px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.view_appointment .item.item-custom.calendar {
+    padding: 0;
+}
+
+.view_appointment .part-time-available .item-divider-custom {
+    padding: 5px 10px 3px;
+}
+
+.view_appointment .part-time-available .item-divider-custom .col {
+    text-align: center;
+}
+
+.view_appointment .part-time-available .item-custom {
+    padding-bottom: 10px;
+}
+
+.view_appointment .part-time-available .item-custom .col {
+    text-align: center;
+    cursor: pointer;
+}
+
+.view_appointment .item.item-custom .item-note {
+    color: inherit !important;
+}
+
+.view_appointment .part-time-available .time-slots {
+    margin-top: 0;
+}
+
+.view_appointment .button-padding {
+    padding: 0 20%;
+}
+
+.view_appointment .part-calendar .card {
+    margin-bottom: 0;
+}
+
+.view_appointment span.error {
+    color: #eb0000;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.view_appointment h2.error {
+    color: #eb0000;
+    font-weight: bold;
+    white-space: normal !important;
+}
+
+.view_appointment .card {
+    box-shadow: none;
+}
+
+.view_appointment .cover_image img {
+    width: 100%;
+    display: block;
+}
+
+.view_appointment .item.item-custom .item-note {
+    color: inherit !important;
+}
+
+.view_appointment .card {
+    box-shadow: none;
+}
+
+
+/** View bookings */
+.view_appointment .active {
+    background-color: #297825;
+}
+
+.view_appointment .completed{
+    background-color: #F3BD71;
+}
+
+.view_appointment .cancelled {
+    background-color: #eb0000;
+}
+
+.view_appointment .booking img {
+    border: 0;
+    border-radius: 0;
+    padding: 4px;
+}
+
+.view_appointment .booking span.booking-date {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.view_appointment .booking p.booking-service {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+.view_appointment .booking p.booking-location {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.view_appointment .booking .item-thumbnail-custom p,
+.view_appointment .booking .item-thumbnail-custom span,
+.view_appointment .booking .item-thumbnail-custom h2 {
+    padding-left: 72px !important;
+}
+
+.view_appointment .booking-state {
+    margin-bottom: 10px;
+    padding: 0 !important;
+}
+
+.view_appointment .booking-state span {
+    padding: 2px 0;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    width: 25%;
+    text-align: center;
+    font-size: 11px;
+}
+
+.view_appointment .notification .item-custom img {
+    border: 0;
+    border-radius: 0;
+    height: 36px;
+}
+
+.view_appointment .notification .item-thumbnail-custom h2 {
+    padding-left: 42px !important;
+}
+
+.view_appointment .notification h2.align-center {
+    text-align: center;
+}
+
+.view_appointment .notification h4.margin-nowrap {
+    white-space: initial;
+    margin-top: 14px;
+}
+
+.view_appointment .notification .note-transparent {
+    color: transparent !important;
+    opacity: 0;
+}
+
+.view_appointment .item.item-custom .item-note.note-transparent {
+    color: transparent !important;
+    opacity: 0;
+}
+
+.thank_text_last {
+    white-space: normal !important;
+}
+
+.view_appointment .item.arrow_box {
+    position: relative;
+    padding: 7px !important;
+    text-overflow: inherit !important;
+    white-space: normal !important;
+    margin-top: 3px;
+    border: 0;
+    
+}
+.view_appointment .provider{
+    border: 0;
+}
+.view_appointment .item.arrow_box::before {
+    
+}
+.view_appointment .providers_gap{
+    margin: 0px 0 10px;
+}
+
+.ion-ios-information-outline {
+    font-size: 30px !important;
+    font-weight: 500 !important;
+}
+
+.center{
+     text-align:center;
+}

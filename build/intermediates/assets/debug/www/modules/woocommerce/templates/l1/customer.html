@@ -1,0 +1,187 @@
+<ion-view>
+    <ion-nav-title>{{ "New Customer" | translate }}</ion-nav-title>
+    <ion-nav-buttons side="right">
+        <button class="button button-custom button-icon icon" ng-click="goTo('cart')">
+            <i class="icon ion-ios-cart"><span class="badge cart-badge">{{ cart_qty }}</span></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="secondary">
+        <button class="button button-custom button-icon icon" ng-click="goTo('home')">
+            <i class="icon ion-ios-home"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content class="has-header padding">
+
+        <div class="list">
+
+            <form name="customerForm" novalidate ng-show="customer.edit">
+
+                <div class="item item-divider">
+                    {{ "Personal Information*" | translate }}
+                </div>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "Email*:" | translate }}</span>
+                    <input name="email" type="email" ng-model="customer.email" required>
+                </label>
+                <p class="error item item-custom" ng-show="customerForm.email.$error.required">{{ "Please enter an Email." | translate }}</p>
+                <p class="error item item-custom" ng-show="customerForm.email.$error.email">{{ "This email is invalid. Please enter a valid Email." | translate }}</p>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "First Name*:" | translate }}</span>
+                    <input name="first_name" ng-model="customer.first_name" type="text" required>
+                </label>
+                <p class="error item item-custom" ng-show="customerForm.first_name.$error.required">{{ "Please enter your First Name." | translate }}</p>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "Last Name*:" | translate }}</span>
+                    <input name="last_name" ng-model="customer.last_name" type="text" required>
+                </label>
+                <p class="error item item-custom" ng-show="customerForm.last_name.$error.required">{{ "Please enter your Last Name." | translate }}</p>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "Username*:" | translate }}</span>
+                    <input name="username" ng-model="customer.username" type="text" required>
+                </label>
+                <p class="error item item-custom" ng-show="customerForm.username.$error.required">{{ "Please enter a Username." | translate }}</p>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "Password*:" | translate }}</span>
+                    <input name="password" ng-model="customer.password" type="password" required>
+                </label>
+                <p class="error item item-custom" ng-show="customerForm.password.$error.required">{{ "Please enter a Password." | translate }}</p>
+
+                <div class="item item-divider">
+                    {{ "Billing Address" | translate }}
+                </div>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "First Name:" | translate }}</span>
+                    <input ng-model="billing_address.first_name" type="text">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "Last Name:" | translate }}</span>
+                    <input ng-model="billing_address.last_name" type="text">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "Company:" | translate }}</span>
+                    <input ng-model="billing_address.company" type="text">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "Address (1):" | translate }}</span>
+                    <input ng-model="billing_address.address_1" type="text">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "Address (2):" | translate }}</span>
+                    <input ng-model="billing_address.address_2" type="text">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "City:" | translate }}</span>
+                    <input ng-model="billing_address.city" type="text">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "State:" | translate }}</span>
+                    <input ng-model="billing_address.state" type="text">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "Postcode:" | translate }}</span>
+                    <input ng-model="billing_address.postcode" type="text">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "Country:" | translate }}</span>
+                    <input ng-model="billing_address.country" type="text">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "Email:" | translate }}</span>
+                    <input name="billingAddressEmail" ng-model="billing_address.email" type="email">
+                </label>
+                <p class="error item item-custom" ng-show="customerForm.billingAddressEmail.$error.email">Please enter a valid.</p>
+
+                <label class="item item-input">
+                    <span class="input-label">{{ "Phone:" | translate }}</span>
+                    <input ng-model="billing_address.phone" type="text">
+                </label>
+
+
+                <div class="item item-divider">
+                    {{ "Shipping Address" | translate }}
+                </div>
+
+                <ion-checkbox ng-model="choice.billing_address_is_shipping_address">{{ "Same as billing address" | translate }}</ion-checkbox>
+
+                <div ng-show="!choice.billing_address_is_shipping_address">
+                    <label class="item item-input">
+                        <span class="input-label">{{ "First Name:" | translate }}</span>
+                        <input ng-model="shipping_address.first_name" type="text">
+                    </label>
+
+                    <label class="item item-input">
+                        <span class="input-label">{{ "Last Name:" | translate }}</span>
+                        <input ng-model="shipping_address.last_name" type="text">
+                    </label>
+
+                    <label class="item item-input">
+                        <span class="input-label">{{ "Company:" | translate }}</span>
+                        <input ng-model="shipping_address.company" type="text">
+                    </label>
+
+                    <label class="item item-input">
+                        <span class="input-label">{{ "Address (1):" | translate }}</span>
+                        <input ng-model="shipping_address.address_1" type="text">
+                    </label>
+
+                    <label class="item item-input">
+                        <span class="input-label">{{ "Address (2):" | translate }}</span>
+                        <input ng-model="shipping_address.address_2" type="text">
+                    </label>
+
+                    <label class="item item-input">
+                        <span class="input-label">{{ "City:" | translate }}</span>
+                        <input ng-model="shipping_address.city" type="text">
+                    </label>
+
+                    <label class="item item-input">
+                        <span class="input-label">{{ "State:" | translate }}</span>
+                        <input ng-model="shipping_address.state" type="text">
+                    </label>
+
+                    <label class="item item-input">
+                        <span class="input-label">{{ "Postcode:" | translate }}</span>
+                        <input ng-model="shipping_address.postcode" type="text">
+                    </label>
+
+                    <label class="item item-input">
+                        <span class="input-label">{{ "Country:" | translate }}</span>
+                        <input ng-model="shipping_address.country" type="text">
+                    </label>
+                </div>
+
+                <button class="button button-block button-custom" ng-click="createCustomer()" ng-disabled="customerForm.$invalid">
+                    {{ "Create Customer" | translate }}
+                </button>
+
+            </form>
+
+        </div>
+
+<style>
+    .cart-badge{
+        background-color: #F44336;
+        color:#ffffff;
+    }
+    .error{
+        font-size:12px;
+        color:#ff0000 !important;
+    }
+</style>
+    </ion-content>
+</ion-view>

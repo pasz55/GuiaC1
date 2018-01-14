@@ -1,0 +1,162 @@
+<ion-view sb-page-background>
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+    <ion-content id="surveyScreen" delegate-handle="surveyScreen">
+
+        <form name="form" ng-submit="post()">
+
+            <div ng-if="!is_loading && sections.length">
+                <div ng-repeat="section in sections" ng-show="isCurrentSection(section.id)">
+                    <div id="surveyList" class="list" delegate-handle="surveyList">
+                        <div class="item text-center item-custom item-text-wrap" ng-if="!is_loading && sections.length && isPreview">
+                            {{ "This is a preview of your survey, it shows current sections and questions set in the editor." | translate }}
+                        </div>
+
+                        <div class="item item-divider item-divider-custom item-text-wrap">
+                            <h2>{{ section.label }}</h2>
+                        </div>
+
+                        <div ng-repeat="field in section.fields" ng-show="isCurrentPage(field.id)">
+                            <div ng-switch on="field.type">
+
+                                <div ng-switch-when="texte">
+                                    <label class="item item-input item-custom item-text-wrap">
+                                        <span class="input-label">{{ field.label }}</span>
+                                    </label>
+                                    <div class="item item-input item-custom">
+                                        <input type="text" ng-model-options="{ allowInvalid: true }" ng-model="formData[field.id]" />
+                                    </div>
+                                </div>
+
+                                <div ng-switch-when="textarea">
+                                    <label class="item item-input item-custom item-text-wrap">
+                                        <span class="input-label">{{ field.label }}</span>
+                                    </label>
+                                    <div class="item item-input item-custom">
+                                        <textarea rows="3" ng-model-options="{ allowInvalid: true }" ng-model="formData[field.id]"></textarea>
+                                    </div>
+                                </div>
+
+                                <div ng-switch-when="email">
+                                    <label class="item item-input item-custom item-text-wrap">
+                                        <span class="input-label">{{ field.label }}</span>
+                                    </label>
+                                    <div class="item item-input item-custom">
+                                        <input type="email" ng-model-options="{ allowInvalid: true }" ng-model="formData[field.id]" />
+                                    </div>
+                                </div>
+
+                                <div ng-switch-when="nombre">
+                                    <label class="item item-input item-custom item-text-wrap">
+                                        <span class="input-label">{{ field.label }}</span>
+                                    </label>
+                                    <div class="item item-input item-custom">
+                                        <input type="number" ng-model-options="{ allowInvalid: true }" ng-model="formData[field.id]" />
+                                    </div>
+                                </div>
+
+                                <div ng-switch-when="date">
+                                    <label class="item item-input item-custom item-text-wrap">
+                                        <span class="input-label">{{ field.label }}</span>
+                                    </label>
+                                    <div class="item item-input item-custom">
+                                        <input type="datetime-local" placeholder="{{ field.label }}" date="formData[field.id]" ng-model-options="{ allowInvalid: true }" ng-model="formData[field.id]" />
+                                    </div>
+                                </div>
+
+                                <div ng-switch-when="geoloc">
+                                    <ion-checkbox class="checkbox-custom" ng-model-options="{ allowInvalid: true }" ng-model="geolocation[field.id]" ng-change="getLocation(field)" ng-checked="geolocation[field.id] == true">{{ field.label }}</ion-checkbox>
+                                </div>
+
+                                <div ng-switch-when="checkbox">
+                                    <div class="item item-divider item-divider-custom">
+                                        <p class="label">{{ field.label }}</p>
+                                    </div>
+                                    <ion-checkbox name="{{field.id}}[]" ng-change="computeNextPage()" class="checkbox-custom item-text-wrap" ng-repeat="option in field.options" ng-model-options="{ allowInvalid: true }" ng-model="formData[field.id][option.id]">{{ option.label }}</ion-checkbox>
+                                </div>
+
+                                <div ng-switch-when="radio">
+                                    <div class="item item-divider item-divider-custom item-text-wrap">
+                                        <p class="label">{{ field.label }}</p>
+                                    </div>
+                                    <ion-radio name="{{field.id}}" ng-change="computeNextPage()" class="radio-custom item-text-wrap" ng-repeat="option in field.options" ng-model-options="{ allowInvalid: true }" ng-model="formData[field.id]" ng-value="option.id">{{ option.label }}</ion-radio>
+                                </div>
+
+                                <div class="item item-input item-select item-custom item-text-wrap" ng-switch-when="select">
+                                    <div class="input-label item-text-wrap">
+                                        {{ field.label }}
+                                    </div>
+                                    <select name="{{field.id}}" ng-change="computeNextPage()" ng-model-options="{ allowInvalid: true }" ng-model="formData[field.id]" ng-options="option.id as option.label for option in field.options">
+                                        <option value="">{{"Please select a value" | translate}}</option>
+                                    </select>
+                                </div>
+
+                                <div ng-switch-when="image">
+                                    <div class="item item-divider item-divider-custom item-text-wrap">
+                                        <p class="label">{{ field.label }}</p>
+                                    </div>
+
+                                    <div class="item item-image item-custom" ng-if="preview_src[field.id]">
+                                        <img ng-src="{{ preview_src[field.id] }}" width="100%" />
+                                    </div>
+
+                                    <div class="item item-icon-left item-custom" ng-click="takePicture(field)">
+                                        <i class="icon ion-image"></i>
+                                        {{ "Add Image" | translate }}
+                                    </div>
+
+                                </div>
+
+                                <div ng-switch-default="">
+                                    <div class="item item-custom item-text-wrap">
+                                        <p>{{ field.label }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div ng-show="isCurrentPage('view_end')">
+                    <div class="list">
+                        <div ng-bind-html="thank_you" class="item item-custom item-text-wrap">
+                        </div>
+                    </div>
+                </div>
+                <div class="list" ng-if="!is_loading">
+                    <div class="item item-custom">
+                        <div class="row" ng-show="isCurrentPage('view_end')">
+                            <div class="col">
+                                <span class="button button-custom button-block" ng-click="goHome()">
+                                    {{"Home" | translate}}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row" ng-hide="isCurrentPage('view_end')" ng-if="sections.length">
+                            <div class="col text-left">
+                                <span class="button button-custom button-block" ng-hide="no_previous" ng-click="goPrevious()">{{"Previous" | translate}}</span>
+                            </div>
+                            <div class="col"><!-- SPACER --></div>
+                            <div class="col text-right">
+                                <span class="button button-custom button-block" ng-click="goNext()">{{isNextPage('view_end') ? "Send" : "Next" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="loader" ng-show="is_loading">
+                    <ion-spinner class="spinner-custom"></ion-spinner>
+                </div>
+                <div class="item text-center item-custom" ng-if="!is_loading && !sections.length && !isCurrentPage('view_end')">
+                    {{ "No survey at the moment!" | translate }}
+                </div>
+            </div>
+
+        </form>
+
+    </ion-content>
+
+</ion-view>
