@@ -1,4 +1,4 @@
-#Sat Jan 13 22:54:34 COT 2018
+#Sun Jan 14 03:16:38 COT 2018
 base.0=C\:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=C\:\\Users\\Usuario\\Desktop\\guiac1_9991_android_source\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
